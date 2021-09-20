@@ -1,1055 +1,1370 @@
-2021-09-17 09:49:20-log: [Package] menu@1.0.0 enable
-2021-09-17 09:49:20-log: [Package] profile@1.0.0 enable
-2021-09-17 09:49:20-log: [Package] messages@1.0.0 enable
-2021-09-17 09:49:20-log: [Package] program@1.0.0 enable
-2021-09-17 09:49:20-log: [Package] device@1.0.1 enable
-2021-09-17 09:49:20-log: [Package] ui-kit@1.0.1 enable
-2021-09-17 09:49:20-log: [Package] tester@1.0.0 enable
-2021-09-17 09:49:20-log: [Package] preferences@1.0.0 enable
-2021-09-17 09:49:20-log: Setup mods mgr.: 351.794ms
-2021-09-17 09:49:20-log: [Package] engine@1.0.5 enable
-2021-09-17 09:49:25-log: [Package] programming@1.0.0 enable
-2021-09-17 09:49:25-log: [Package] asset-db@1.0.0 enable
-2021-09-17 09:49:25-log: [Package] console@1.0.0 enable
-2021-09-17 09:49:25-log: [Package] scene@1.0.0 enable
-2021-09-17 09:49:25-log: [Package] project@1.0.1 enable
-2021-09-17 09:49:25-log: [Package] about@1.0.0 enable
-2021-09-17 09:49:25-log: [Package] server@1.0.0 enable
-2021-09-17 09:49:25-log: [Package] utils@1.0.0 enable
-2021-09-17 09:49:25-log: [Package] assets@1.0.0 enable
-2021-09-17 09:49:25-log: [Package] inspector@1.0.0 enable
-2021-09-17 09:49:26-log: [Package] hierarchy@1.0.0 enable
-2021-09-17 09:49:29-log: [Package] builder@1.2.8 enable
-2021-09-17 09:49:29-log: [Package] node-library@1.0.0 enable
-2021-09-17 09:49:29-log: [Package] shortcuts@1.0.1 enable
-2021-09-17 09:49:29-log: [Package] importer@1.0.0 enable
-2021-09-17 09:49:29-log: [Package] package-asset@1.0.0 enable
-2021-09-17 09:49:29-log: [Package] reference-image@1.0.0 enable
-2021-09-17 09:49:29-log: [Package] channel-upload-tools@1.0.0 enable
-2021-09-17 09:49:29-log: [Package] runtime-dev-tools@1.0.0 enable
-2021-09-17 09:49:29-log: [Package] alipay-mini-game@1.0.0 enable
-2021-09-17 09:49:29-log: [Package] android@1.0.0 enable
-2021-09-17 09:49:29-log: [Package] baidu-mini-game@1.0.0 enable
-2021-09-17 09:49:29-log: [Package] bytedance-mini-game@1.0.0 enable
-2021-09-17 09:49:29-log: [Package] huawei-agc@1.0.0 enable
-2021-09-17 09:49:29-warn: ios:Developer team information not found
-2021-09-17 09:49:29-warn: Command failed: xcrun security find-identity -v -p codesigning
+2021-09-20 09:51:58-log: [Package] menu@1.0.0 enable
+2021-09-20 09:51:58-log: [Package] profile@1.0.0 enable
+2021-09-20 09:51:58-log: [Package] messages@1.0.0 enable
+2021-09-20 09:51:58-log: [Package] program@1.0.0 enable
+2021-09-20 09:51:58-log: [Package] device@1.0.1 enable
+2021-09-20 09:51:58-log: [Package] ui-kit@1.0.1 enable
+2021-09-20 09:51:58-log: [Package] tester@1.0.0 enable
+2021-09-20 09:51:59-log: [Package] preferences@1.0.0 enable
+2021-09-20 09:51:59-log: Setup mods mgr.: 365.115ms
+2021-09-20 09:51:59-log: [Package] engine@1.0.5 enable
+2021-09-20 09:52:04-log: [Package] programming@1.0.0 enable
+2021-09-20 09:52:04-log: [Package] asset-db@1.0.0 enable
+2021-09-20 09:52:04-log: [Package] console@1.0.0 enable
+2021-09-20 09:52:04-log: [Package] scene@1.0.0 enable
+2021-09-20 09:52:04-log: [Package] project@1.0.1 enable
+2021-09-20 09:52:04-log: [Package] about@1.0.0 enable
+2021-09-20 09:52:04-log: [Package] server@1.0.0 enable
+2021-09-20 09:52:04-log: [Package] utils@1.0.0 enable
+2021-09-20 09:52:04-log: [Package] assets@1.0.0 enable
+2021-09-20 09:52:04-log: [Package] inspector@1.0.0 enable
+2021-09-20 09:52:04-log: [Package] hierarchy@1.0.0 enable
+2021-09-20 09:52:07-log: [Package] preview@1.0.1 enable
+2021-09-20 09:52:08-log: [Package] builder@1.2.8 enable
+2021-09-20 09:52:08-log: [Package] node-library@1.0.0 enable
+2021-09-20 09:52:08-log: [Package] shortcuts@1.0.1 enable
+2021-09-20 09:52:08-log: [Package] importer@1.0.0 enable
+2021-09-20 09:52:08-log: [Package] package-asset@1.0.0 enable
+2021-09-20 09:52:08-log: [Package] reference-image@1.0.0 enable
+2021-09-20 09:52:08-log: [Package] channel-upload-tools@1.0.0 enable
+2021-09-20 09:52:08-log: [Package] runtime-dev-tools@1.0.0 enable
+2021-09-20 09:52:08-log: [Package] alipay-mini-game@1.0.0 enable
+2021-09-20 09:52:08-log: [Package] android@1.0.0 enable
+2021-09-20 09:52:08-log: [Package] baidu-mini-game@1.0.0 enable
+2021-09-20 09:52:08-log: [Package] bytedance-mini-game@1.0.0 enable
+2021-09-20 09:52:08-log: [Package] huawei-agc@1.0.0 enable
+2021-09-20 09:52:08-warn: ios:Developer team information not found
+2021-09-20 09:52:08-warn: Command failed: xcrun security find-identity -v -p codesigning
 xcrun: error: active developer path ("/Applications/Xcode 10.2.app/Contents/Developer") does not exist
 Use `sudo xcode-select --switch path/to/Xcode.app` to specify the Xcode that you wish to use for command line developer tools, or use `xcode-select --install` to install the standalone command line developer tools.
 See `man xcode-select` for more details.
 
-2021-09-17 09:49:29-log: [Package] ios@1.0.0 enable
-2021-09-17 09:49:29-log: [Package] ios-app-clip@1.0.0 enable
-2021-09-17 09:49:29-log: [Package] mac@1.0.0 enable
-2021-09-17 09:49:29-log: [Package] native@1.0.0 enable
-2021-09-17 09:49:29-log: [Package] ohos@1.0.0 enable
-2021-09-17 09:49:29-log: [Package] web-desktop@1.0.0 enable
-2021-09-17 09:49:29-log: [Package] web-mobile@1.0.0 enable
-2021-09-17 09:49:29-log: [Package] wechatgame@1.0.0 enable
-2021-09-17 09:49:29-log: [Package] windows@1.0.0 enable
-2021-09-17 09:49:30-log: [Package] xiaomi-quick-game@1.0.0 enable
-2021-09-17 09:49:30-log: [Package] cocos-play@1.0.0 enable
-2021-09-17 09:49:30-log: [Package] huawei-quick-game@1.0.0 enable
-2021-09-17 09:49:30-log: [Package] link-sure@1.0.0 enable
-2021-09-17 09:49:30-log: [Package] oppo-mini-game@1.0.0 enable
-2021-09-17 09:49:30-log: [Package] qtt@1.0.0 enable
-2021-09-17 09:49:30-log: [Package] vivo-mini-game@1.0.0 enable
-2021-09-17 09:49:30-log: [Package] cocos-service@3.0.1 enable
-2021-09-17 09:49:31-log: [Package] extension@3.0.8 enable
-2021-09-17 09:49:31-log: [Package] im-plugin@3.0.6 enable
-2021-09-17 09:49:31-log: [Package] lightmap@1.0.3 enable
-2021-09-17 09:49:35-warn: [Scene] Sender does not exist: 1489
-2021-09-17 09:49:37-log: [Scene] begin init
-2021-09-17 09:49:37-log: [Scene] require engine end
-2021-09-17 09:49:37-log: [Scene] Serialize end
-2021-09-17 09:49:37-log: [Scene] configureStartup end
-2021-09-17 09:49:37-info: [Scene] WebGL2 device initialized.
-2021-09-17 09:49:37-log: [Scene] Cocos Creator v3.3.0
-2021-09-17 09:49:37-info: [Scene] Forward render pipeline initialized.
-2021-09-17 09:49:37-log: [Scene] openEngine end
-2021-09-17 09:49:37-log: [Scene] configureEngine end
-2021-09-17 09:49:45-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 10:00:47-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 10:02:55-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 10:02:56-warn: [Scene] Bg<Chan> dice should be an array, but now it is  null
-2021-09-17 10:02:56-error: [Window] Cannot read property 'length' of null
-2021-09-17 10:02:59-warn: [Scene] Bg<Chan> dice should be an array, but now it is  null
-2021-09-17 10:02:59-error: [Window] Cannot read property 'length' of null
-2021-09-17 10:03:04-warn: [Scene] Bg<Chan> dice should be an array, but now it is  null
-2021-09-17 10:03:32-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 10:03:32-warn: [Scene] Bg<Chan> dice should be an array, but now it is  null
-2021-09-17 10:03:32-error: [Window] Cannot read property 'length' of null
-2021-09-17 10:03:48-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 10:03:49-warn: [Scene] Bg<Chan> dice should be an array, but now it is  null
-2021-09-17 10:03:49-error: [Window] Cannot read property 'length' of null
-2021-09-17 10:03:54-warn: [Scene] Bg<Chan> dice should be an array, but now it is  null
-2021-09-17 10:03:54-error: [Window] Cannot read property 'length' of null
-2021-09-17 10:04:02-warn: [Scene] Bg<Chan> dice should be an array, but now it is  null
-2021-09-17 10:04:03-log: [Scene] Cannot read property 'replace' of undefined
-2021-09-17 10:04:03-error: Message response error: Cannot read property 'replace' of undefined
-2021-09-17 10:04:05-log: [Scene] Cannot read property 'replace' of undefined
-2021-09-17 10:04:05-error: Message response error: Cannot read property 'replace' of undefined
-2021-09-17 10:04:37-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 10:04:37-warn: [Scene] Bg<Chan> dice should be an array, but now it is  null
-2021-09-17 10:04:37-error: [Window] Cannot read property 'length' of null
-2021-09-17 10:04:57-log: [Scene] Cannot read property 'replace' of undefined
-2021-09-17 10:04:57-error: Message response error: Cannot read property 'replace' of undefined
-2021-09-17 10:04:59-log: [Scene] Cannot read property 'replace' of undefined
-2021-09-17 10:04:59-error: Message response error: Cannot read property 'replace' of undefined
-2021-09-17 10:05:02-log: [Scene] Cannot read property 'replace' of undefined
-2021-09-17 10:05:02-error: Message response error: Cannot read property 'replace' of undefined
-2021-09-17 10:05:05-log: [Scene] Cannot read property 'replace' of undefined
-2021-09-17 10:05:05-error: Message response error: Cannot read property 'replace' of undefined
-2021-09-17 10:05:08-log: [Scene] Cannot read property 'replace' of undefined
-2021-09-17 10:05:08-error: Message response error: Cannot read property 'replace' of undefined
-2021-09-17 10:05:10-log: [Scene] Cannot read property 'replace' of undefined
-2021-09-17 10:05:10-error: Message response error: Cannot read property 'replace' of undefined
-2021-09-17 10:06:14-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 10:06:14-warn: [Scene] Bg<Chan> dice should be an array, but now it is  null
-2021-09-17 10:06:31-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 10:06:58-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 10:16:01-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 10:17:35-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 10:18:23-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 10:19:48-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 10:20:23-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 10:21:56-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 10:23:35-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 10:24:23-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 10:25:13-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 10:28:30-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 10:28:34-error: [preview-error]Uncaught TypeError: Cannot read properties of undefined (reading 'log') in http://localhost:7456/scripting/x/mods/fs/0/assets/Typescript/chan.js
-2021-09-17 10:28:44-error: [preview-error]Uncaught TypeError: Cannot read properties of undefined (reading 'log') in http://localhost:7456/scripting/x/mods/fs/0/assets/Typescript/chan.js
-2021-09-17 10:29:22-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 10:30:20-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 10:32:17-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 10:32:23-error: [preview-error]Uncaught TypeError: Cannot read properties of undefined (reading 'getComponent') in http://localhost:7456/scripting/x/mods/fs/0/assets/Typescript/chan.js
-2021-09-17 10:33:49-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 10:34:40-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 10:35:11-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 10:35:34-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 10:36:42-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 10:38:00-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 10:42:48-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 10:44:34-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 10:46:23-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 10:48:05-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 10:48:54-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 10:50:14-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 10:50:45-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 10:59:46-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 11:00:13-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 11:00:28-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 11:00:33-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 11:05:44-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 11:06:39-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 11:07:50-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 11:08:34-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 11:09:08-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 11:21:41-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 11:21:59-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 11:22:56-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 11:41:53-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 11:41:53-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 11:41:53-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 11:41:53-error: [Scene] asset can't be load:fbcd478a-03a1-45d6-b295-dd3323d2b4e7
-2021-09-17 11:41:53-error: [Scene] asset can't be load:fbcd478a-03a1-45d6-b295-dd3323d2b4e7
-2021-09-17 11:41:53-error: [Scene] asset can't be load:fbcd478a-03a1-45d6-b295-dd3323d2b4e7
-2021-09-17 11:41:53-log: [Scene] don't support this function in current mode general setCurEditTime
-2021-09-17 11:41:53-error: [Scene] asset can't be load:fbcd478a-03a1-45d6-b295-dd3323d2b4e7
-2021-09-17 11:43:07-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 11:43:07-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 11:43:07-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 11:43:50-error: Failed to load module file:///Users/chandankrishnani/CocosPractice/Snake_Ladder/assets/Typescript/chan.ts: SyntaxError: unknown: Unexpected token (70:33)
-
-  68 |          this.player1_rand=Math.random()*6;
-  69 |          this.player1_rand=Math.floor(this.player1_rand);
-> 70 |          tween(this.player1_dice.)
-     |                                  ^
-  71 |          .delay(0.1)
-  72 |          .call(()=>{ 
-  73 |            console.log("hello we are");.
-2021-09-17 11:43:51-error: Failed to load module file:///Users/chandankrishnani/CocosPractice/Snake_Ladder/assets/Typescript/chan.ts: SyntaxError: unknown: Unexpected token (70:33)
-
-  68 |          this.player1_rand=Math.random()*6;
-  69 |          this.player1_rand=Math.floor(this.player1_rand);
-> 70 |          tween(this.player1_dice.)
-     |                                  ^
-  71 |          .delay(0.1)
-  72 |          .call(()=>{ 
-  73 |            console.log("hello we are");.
-2021-09-17 11:43:51-warn: [Scene] Missing class: 468080QwwVFfav43bjlXf9s
-2021-09-17 11:43:51-error: [Scene] Script "468080QwwVFfav43bjlXf9s" attached to "Bg" is missing or invalid. Detailed information:
-Script UUID: "46808d10-c305-457d-abf8-ddb8e55dff6c"
-Class ID: "468080QwwVFfav43bjlXf9s"
-
-2021-09-17 11:43:51-error: [Scene] Script "468080QwwVFfav43bjlXf9s" attached to "Bg" is missing or invalid. Detailed information:
-Script UUID: "46808d10-c305-457d-abf8-ddb8e55dff6c"
-Class ID: "468080QwwVFfav43bjlXf9s"
-
-2021-09-17 11:43:51-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 11:43:51-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 11:43:51-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 11:44:33-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 11:44:33-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 11:44:33-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 11:48:47-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 11:48:47-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 11:48:47-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 11:58:21-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 11:58:21-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 11:58:21-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 12:05:36-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 12:05:36-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 12:05:36-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 12:06:31-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 12:06:31-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 12:06:31-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 12:17:53-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 12:17:53-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 12:17:53-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 12:19:22-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 12:19:22-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 12:19:22-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 12:44:56-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 12:44:56-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 12:44:56-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 12:47:50-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 12:47:50-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 12:47:50-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 12:52:00-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 12:52:00-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 12:52:00-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 12:54:46-error: [preview-error]Uncaught Error: TiledLayer.getTiledTileAt: invalid position in http://localhost:7456/scripting/engine/bin/.cache/dev/preview/bundled/index.js
-2021-09-17 13:00:32-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 13:00:32-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 13:00:32-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 13:01:57-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 13:01:57-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 13:01:57-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 13:02:51-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 13:02:51-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 13:02:51-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 13:03:29-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 13:03:29-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 13:03:29-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 13:04:23-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 13:04:23-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 13:04:23-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 13:07:49-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 13:07:49-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 13:07:49-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 13:08:00-error: [preview-error]Uncaught Error: TiledLayer.getTiledTileAt: invalid position in http://localhost:7456/scripting/engine/bin/.cache/dev/preview/bundled/index.js
-2021-09-17 13:09:03-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 13:09:03-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 13:09:03-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 13:10:48-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 13:10:48-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 13:10:48-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 13:12:05-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 13:12:05-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 13:12:05-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 13:21:35-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 13:21:35-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 13:21:35-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 13:25:13-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 13:25:13-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 13:25:13-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 13:26:14-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 13:26:14-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 13:26:14-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 14:07:47-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 14:07:47-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 14:07:47-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 14:11:11-error: [preview-error]Uncaught Error: TiledLayer.getTiledTileAt: invalid position in http://localhost:7456/scripting/engine/bin/.cache/dev/preview/bundled/index.js
-2021-09-17 14:28:13-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 14:28:13-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 14:28:13-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 14:28:49-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 14:28:49-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 14:28:49-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 14:33:45-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 14:33:45-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 14:33:45-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 14:57:01-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 14:57:01-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 14:57:01-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 14:57:36-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 14:57:36-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 14:57:36-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 14:58:25-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 14:58:25-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 14:58:25-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 15:29:32-error: [Scene] The Asset used by component "cc.Animation" in scene "Main" is missing. Detailed information:
+2021-09-20 09:52:08-log: [Package] ios@1.0.0 enable
+2021-09-20 09:52:08-log: [Package] ios-app-clip@1.0.0 enable
+2021-09-20 09:52:08-log: [Package] mac@1.0.0 enable
+2021-09-20 09:52:08-log: [Package] native@1.0.0 enable
+2021-09-20 09:52:08-log: [Package] ohos@1.0.0 enable
+2021-09-20 09:52:08-log: [Package] web-desktop@1.0.0 enable
+2021-09-20 09:52:08-log: [Package] web-mobile@1.0.0 enable
+2021-09-20 09:52:09-log: [Package] wechatgame@1.0.0 enable
+2021-09-20 09:52:09-log: [Package] windows@1.0.0 enable
+2021-09-20 09:52:09-log: [Package] xiaomi-quick-game@1.0.0 enable
+2021-09-20 09:52:09-log: [Package] cocos-play@1.0.0 enable
+2021-09-20 09:52:09-log: [Package] huawei-quick-game@1.0.0 enable
+2021-09-20 09:52:09-log: [Package] link-sure@1.0.0 enable
+2021-09-20 09:52:09-log: [Package] oppo-mini-game@1.0.0 enable
+2021-09-20 09:52:09-log: [Package] qtt@1.0.0 enable
+2021-09-20 09:52:09-log: [Package] vivo-mini-game@1.0.0 enable
+2021-09-20 09:52:09-log: [Package] cocos-service@3.0.1 enable
+2021-09-20 09:52:10-log: [Package] extension@3.0.8 enable
+2021-09-20 09:52:10-log: [Package] im-plugin@3.0.6 enable
+2021-09-20 09:52:10-log: [Package] lightmap@1.0.3 enable
+2021-09-20 09:52:15-warn: Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+
+Why you should do it regularly:
+https://github.com/browserslist/browserslist#browsers-data-updating
+2021-09-20 09:52:15-log: [Scene] begin init
+2021-09-20 09:52:15-log: [Scene] require engine end
+2021-09-20 09:52:15-log: [Scene] Serialize end
+2021-09-20 09:52:15-log: [Scene] configureStartup end
+2021-09-20 09:52:15-info: [Scene] WebGL2 device initialized.
+2021-09-20 09:52:15-log: [Scene] Cocos Creator v3.3.0
+2021-09-20 09:52:15-warn: [Scene] Sender does not exist: 965
+2021-09-20 09:52:16-info: [Scene] Forward render pipeline initialized.
+2021-09-20 09:52:16-log: [Scene] openEngine end
+2021-09-20 09:52:16-log: [Scene] configureEngine end
+2021-09-20 09:54:05-error: [Scene] The Asset used by component "cc.Animation" in scene "Main" is missing. Detailed information:
 Asset url: "db://assets/scene/Main"
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 15:29:32-error: [Scene] The Asset used by component "cc.Animation" in scene "Main" is missing. Detailed information:
+2021-09-20 09:54:05-error: [Scene] The Asset used by component "cc.Animation" in scene "Main" is missing. Detailed information:
 Asset url: "db://assets/scene/Main"
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 15:29:32-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 15:31:13-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 15:31:13-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 15:31:13-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 15:41:11-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 15:41:11-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 15:41:11-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 15:41:17-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 15:41:17-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 15:41:17-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 15:48:12-error: Message response error: parameter error
-2021-09-17 15:48:12-error: [Scene] The Asset used by component "cc.Animation" in scene "Main" is missing. Detailed information:
+2021-09-20 09:54:05-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 09:59:08-error: Message response error: parameter error
+2021-09-20 10:00:03-error: [Asset DB] Importer exec failed: {asset[/Users/chandankrishnani/CocosPractice/Snake_Ladder/assets/Assets/map/Board.tmx](379cf526-eb00-48c0-a67b-ec1980e1e483)}
+2021-09-20 10:00:03-error: [Asset DB] Input file is missing
+2021-09-20 10:00:03-error: [Asset DB] Error: Input file is missing
+2021-09-20 10:01:42-error: [Scene] The Asset used by component "cc.Animation" in scene "Main" is missing. Detailed information:
 Asset url: "db://assets/scene/Main"
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 15:48:12-error: [Scene] The Asset used by component "cc.Animation" in scene "Main" is missing. Detailed information:
+2021-09-20 10:01:42-error: [Scene] The Asset used by component "cc.Animation" in scene "Main" is missing. Detailed information:
 Asset url: "db://assets/scene/Main"
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 15:48:12-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 15:49:04-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 10:01:42-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 10:07:21-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 15:49:04-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 10:07:21-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 15:49:04-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 15:50:47-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 10:07:21-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 10:08:34-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 15:50:47-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 10:08:34-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 15:50:47-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 15:51:57-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 10:08:34-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 10:09:22-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 15:51:57-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 10:09:22-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 15:51:57-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 15:52:22-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 10:09:22-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 10:11:46-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 15:52:22-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 10:11:46-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 15:52:22-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 15:52:59-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 10:11:46-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 10:12:12-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 15:52:59-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 10:12:12-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 15:52:59-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 15:54:44-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 15:54:44-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 15:54:44-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 15:57:02-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 15:57:02-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 15:57:02-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 16:01:07-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 16:01:07-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 16:01:07-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 16:01:47-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 16:01:47-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 16:01:47-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 16:03:44-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 16:03:44-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 16:03:44-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 16:03:53-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 16:03:53-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 16:03:53-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 16:24:03-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 16:24:03-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 16:24:03-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 16:24:43-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 16:24:43-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 16:24:43-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 16:26:58-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 16:26:58-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 16:26:58-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 16:30:23-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 16:30:23-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 16:30:23-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 16:31:19-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 16:31:19-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 16:31:19-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 16:31:42-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 16:31:42-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 16:31:42-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 16:32:28-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 16:32:28-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 16:32:28-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 16:33:08-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 16:33:08-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 16:33:08-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 16:33:32-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 16:33:32-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 16:33:32-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 16:35:11-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 16:35:11-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 16:35:11-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 16:39:48-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 16:39:48-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 16:39:48-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 16:41:15-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 16:41:15-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 16:41:15-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 16:42:05-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 16:42:05-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 16:42:05-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 16:42:43-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 16:42:43-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 16:42:43-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 16:43:19-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 16:43:19-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 16:43:19-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 16:43:51-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 16:43:51-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 16:43:51-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 16:44:37-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 16:44:37-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 16:44:37-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 16:45:02-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 16:45:02-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 16:45:02-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 16:47:17-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 16:47:17-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 16:47:17-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 16:50:31-error: [Window] Cannot set property 'isPrefabRoot' of undefined
-2021-09-17 16:51:01-warn: [Scene] can't find node in current scene: 03P8PilkhO+YNjO03OrFNy
-2021-09-17 16:51:01-warn: [Scene] can't find prefab root node in current scene
-2021-09-17 16:51:14-warn: [Scene] can't find node in current scene: 03P8PilkhO+YNjO03OrFNy
-2021-09-17 16:51:14-warn: [Scene] can't find prefab root node in current scene
-2021-09-17 16:51:14-error: [Scene] The data used to save is empty, use last saved data to save
-2021-09-17 16:51:14-warn: [Scene] can't find node in current scene: 03P8PilkhO+YNjO03OrFNy
-2021-09-17 16:51:14-warn: [Scene] can't find prefab root node in current scene
-2021-09-17 16:51:15-warn: [Scene] can't find node in current scene: 03P8PilkhO+YNjO03OrFNy
-2021-09-17 16:51:15-warn: [Scene] can't find prefab root node in current scene
-2021-09-17 16:51:15-error: [Scene] The data used to save is empty, use last saved data to save
-2021-09-17 16:51:15-warn: [Scene] can't find node in current scene: 03P8PilkhO+YNjO03OrFNy
-2021-09-17 16:51:15-warn: [Scene] can't find prefab root node in current scene
-2021-09-17 16:51:15-warn: [Scene] can't find node in current scene: 03P8PilkhO+YNjO03OrFNy
-2021-09-17 16:51:15-warn: [Scene] can't find prefab root node in current scene
-2021-09-17 16:51:15-error: [Scene] The data used to save is empty, use last saved data to save
-2021-09-17 16:51:15-warn: [Scene] can't find node in current scene: 03P8PilkhO+YNjO03OrFNy
-2021-09-17 16:51:15-warn: [Scene] can't find prefab root node in current scene
-2021-09-17 16:51:22-warn: [Scene] can't find node in current scene: 03P8PilkhO+YNjO03OrFNy
-2021-09-17 16:51:22-warn: [Scene] can't find prefab root node in current scene
-2021-09-17 16:51:23-warn: [Scene] can't find node in current scene: 03P8PilkhO+YNjO03OrFNy
-2021-09-17 16:51:23-warn: [Scene] can't find prefab root node in current scene
-2021-09-17 16:51:23-error: [Scene] The data used to save is empty, use last saved data to save
-2021-09-17 16:51:23-warn: [Scene] can't find node in current scene: 03P8PilkhO+YNjO03OrFNy
-2021-09-17 16:51:23-warn: [Scene] can't find prefab root node in current scene
-2021-09-17 16:51:23-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 16:51:23-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 16:51:23-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 16:51:32-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 16:51:32-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 16:51:32-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 16:52:43-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 16:52:43-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 16:52:43-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 16:53:32-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 16:53:32-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 16:53:32-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 16:55:14-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 16:55:14-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 16:55:14-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 16:58:54-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 16:58:54-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 16:58:54-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 16:59:19-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 16:59:19-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 16:59:19-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 16:59:53-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 16:59:53-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 16:59:53-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 17:01:21-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 17:01:21-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 17:01:21-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 17:02:34-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 17:02:34-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 17:02:34-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 17:03:35-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 17:03:35-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 17:03:35-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 17:04:08-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 17:04:08-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 17:04:08-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 17:04:39-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 17:04:39-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 17:04:39-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 17:07:20-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 17:07:20-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 17:07:20-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 17:08:20-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 17:08:20-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 17:08:20-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 17:12:14-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 17:12:14-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 17:12:14-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 17:12:36-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 17:12:36-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 17:12:36-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 17:12:52-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 17:12:52-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 17:12:52-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 17:13:13-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 17:13:13-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
-Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
-
-2021-09-17 17:13:13-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 17:16:45-error: Failed to load module file:///Users/chandankrishnani/CocosPractice/Snake_Ladder/assets/Typescript/chan.ts: SyntaxError: unknown: Missing semicolon (237:31)
+2021-09-20 10:12:12-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 10:18:58-error: Failed to load module file:///Users/chandankrishnani/CocosPractice/Snake_Ladder/assets/Typescript/chan.ts: SyntaxError: unknown: Unexpected token ',' (238:44)
 
-  235 |       this.snake_array[0].setContentSize(400,diff1);
-  236 |       let ang = Math.atan2(diff1,diff2);
-> 237 |       tween(this.snake[0].node)s
-      |                                ^
-  238 |       .to(0.5,{angle : toDegree(ang)-90})
-  239 |       .start();
-  240 |.
-2021-09-17 17:16:45-error: Failed to load module file:///Users/chandankrishnani/CocosPractice/Snake_Ladder/assets/Typescript/chan.ts: SyntaxError: unknown: Missing semicolon (237:31)
+  236 |    
+  237 |       this.tile4=this.layer.getTiledTileAt(5,2,true);
+> 238 |       this.tile5=this.layer.getTiledTileAt(,9,true);
+      |                                             ^
+  239 |       let diff1:number=this.tile4.node.position.y-this.tile5.node.position.y;
+  240 |       let diff2:number=this.tile4.node.position.x-this.tile5.node.position.x;
+  241 |       this.snake_array[0]=instantiate(this.snake);.
+2021-09-20 10:18:59-error: Failed to load module file:///Users/chandankrishnani/CocosPractice/Snake_Ladder/assets/Typescript/chan.ts: SyntaxError: unknown: Unexpected token ',' (238:44)
 
-  235 |       this.snake_array[0].setContentSize(400,diff1);
-  236 |       let ang = Math.atan2(diff1,diff2);
-> 237 |       tween(this.snake[0].node)s
-      |                                ^
-  238 |       .to(0.5,{angle : toDegree(ang)-90})
-  239 |       .start();
-  240 |.
-2021-09-17 17:16:45-warn: [Scene] Missing class: 468080QwwVFfav43bjlXf9s
-2021-09-17 17:16:45-error: [Scene] Script "468080QwwVFfav43bjlXf9s" attached to "Bg" is missing or invalid. Detailed information:
+  236 |    
+  237 |       this.tile4=this.layer.getTiledTileAt(5,2,true);
+> 238 |       this.tile5=this.layer.getTiledTileAt(,9,true);
+      |                                             ^
+  239 |       let diff1:number=this.tile4.node.position.y-this.tile5.node.position.y;
+  240 |       let diff2:number=this.tile4.node.position.x-this.tile5.node.position.x;
+  241 |       this.snake_array[0]=instantiate(this.snake);.
+2021-09-20 10:18:59-warn: [Scene] Missing class: 468080QwwVFfav43bjlXf9s
+2021-09-20 10:18:59-error: [Scene] Script "468080QwwVFfav43bjlXf9s" attached to "Bg" is missing or invalid. Detailed information:
 Script UUID: "46808d10-c305-457d-abf8-ddb8e55dff6c"
 Class ID: "468080QwwVFfav43bjlXf9s"
 
-2021-09-17 17:16:45-error: [Scene] Script "468080QwwVFfav43bjlXf9s" attached to "Bg" is missing or invalid. Detailed information:
+2021-09-20 10:18:59-error: [Scene] Script "468080QwwVFfav43bjlXf9s" attached to "Bg" is missing or invalid. Detailed information:
 Script UUID: "46808d10-c305-457d-abf8-ddb8e55dff6c"
 Class ID: "468080QwwVFfav43bjlXf9s"
 
-2021-09-17 17:16:45-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 10:18:59-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 17:16:45-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 10:18:59-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 17:16:45-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 17:17:26-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 10:18:59-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 10:19:34-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 17:17:26-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 10:19:34-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 17:17:27-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 17:18:31-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 10:19:34-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 10:20:57-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 17:18:31-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 10:20:57-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 17:18:31-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 17:19:25-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 10:20:57-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 10:22:34-error: Failed to load module file:///Users/chandankrishnani/CocosPractice/Snake_Ladder/assets/Typescript/chan.ts: SyntaxError: unknown: Unexpected token (225:10)
+
+  223 |     randomsnake(max:number,min:number)
+  224 |     {
+> 225 |       if(())
+      |           ^
+  226 |  
+  227 |        console.log(Math. floor(Math. random() * (max - min + 1)) + min);
+  228 |.
+2021-09-20 10:22:34-error: Failed to load module file:///Users/chandankrishnani/CocosPractice/Snake_Ladder/assets/Typescript/chan.ts: SyntaxError: unknown: Unexpected token (225:10)
+
+  223 |     randomsnake(max:number,min:number)
+  224 |     {
+> 225 |       if(())
+      |           ^
+  226 |  
+  227 |        console.log(Math. floor(Math. random() * (max - min + 1)) + min);
+  228 |.
+2021-09-20 10:22:34-warn: [Scene] Missing class: 468080QwwVFfav43bjlXf9s
+2021-09-20 10:22:34-error: [Scene] Script "468080QwwVFfav43bjlXf9s" attached to "Bg" is missing or invalid. Detailed information:
+Script UUID: "46808d10-c305-457d-abf8-ddb8e55dff6c"
+Class ID: "468080QwwVFfav43bjlXf9s"
+
+2021-09-20 10:22:34-error: [Scene] Script "468080QwwVFfav43bjlXf9s" attached to "Bg" is missing or invalid. Detailed information:
+Script UUID: "46808d10-c305-457d-abf8-ddb8e55dff6c"
+Class ID: "468080QwwVFfav43bjlXf9s"
+
+2021-09-20 10:22:34-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 17:19:25-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 10:22:34-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 17:19:25-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 17:20:46-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 10:22:34-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 10:22:54-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 17:20:46-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 10:22:54-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 17:20:46-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 17:22:05-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 10:22:54-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 10:24:25-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 17:22:05-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 10:24:25-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 17:22:05-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 17:23:38-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 10:24:25-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 10:33:45-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 17:23:38-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 10:33:45-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 17:23:38-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 17:24:17-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 10:33:45-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 10:38:07-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 17:24:17-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 10:38:07-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 17:24:17-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 17:25:01-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 10:38:07-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 10:48:42-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 17:25:01-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 10:48:42-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 17:25:01-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 17:26:06-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 10:48:42-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 10:49:23-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 17:26:06-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 10:49:23-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 17:26:06-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 17:28:44-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 10:49:23-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 10:50:14-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 17:28:44-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 10:50:14-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 17:28:44-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 17:29:45-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 10:50:14-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 10:50:30-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 17:29:45-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 10:50:30-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 17:29:45-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 17:30:12-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 10:50:30-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 10:51:34-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 17:30:12-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 10:51:34-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 17:30:12-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 17:30:33-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 10:51:34-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 10:52:44-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 17:30:33-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 10:52:44-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 17:30:33-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 17:31:08-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 10:52:44-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 10:53:29-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 17:31:08-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 10:53:29-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 17:31:08-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 17:31:31-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 10:53:29-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 10:53:44-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 17:31:31-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 10:53:44-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 17:31:31-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 17:32:33-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 10:53:44-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 10:54:04-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 17:32:33-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 10:54:04-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 17:32:33-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 17:33:45-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 10:54:04-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 11:01:23-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 17:33:45-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 11:01:23-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 17:33:45-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 17:36:08-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 11:01:23-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 11:01:55-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 17:36:08-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 11:01:55-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 17:36:08-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 17:36:38-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 11:01:55-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 11:08:28-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 17:36:38-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 11:08:28-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 17:36:38-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 17:36:59-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 11:08:28-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 11:10:09-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 17:36:59-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 11:10:09-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 17:36:59-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 17:37:35-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 11:10:09-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 11:11:19-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 17:37:35-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 11:11:19-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 17:37:35-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 17:38:10-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 11:11:19-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 11:11:50-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 17:38:10-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 11:11:50-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 17:38:10-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 17:38:41-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 11:11:50-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 11:14:14-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 17:38:41-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 11:14:14-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 17:38:41-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 17:39:53-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 11:14:14-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 11:15:48-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 17:39:53-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 11:15:48-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 17:39:53-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 17:40:23-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 11:15:48-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 11:17:32-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 17:40:23-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 11:17:32-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 17:40:23-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 17:47:59-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 11:17:32-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 11:54:08-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 17:47:59-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 11:54:08-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 17:47:59-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 17:48:52-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 11:54:08-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 11:54:35-error: [Scene] The Asset used by component "cc.Animation" in scene "Main" is missing. Detailed information:
+Asset url: "db://assets/scene/Main"
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 17:48:52-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 11:54:35-error: [Scene] The Asset used by component "cc.Animation" in scene "Main" is missing. Detailed information:
+Asset url: "db://assets/scene/Main"
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 17:48:52-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 18:01:04-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 11:54:35-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 11:55:47-error: [Scene] The Asset used by component "cc.Animation" in scene "Main" is missing. Detailed information:
+Asset url: "db://assets/scene/Main"
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 18:01:04-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 11:55:47-error: [Scene] The Asset used by component "cc.Animation" in scene "Main" is missing. Detailed information:
+Asset url: "db://assets/scene/Main"
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 18:01:04-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
-2021-09-17 18:04:19-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 11:55:47-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 11:58:31-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 18:04:19-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+2021-09-20 11:58:31-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
 Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
 
-2021-09-17 18:04:19-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 11:58:31-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 12:02:38-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:02:38-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:02:38-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 12:10:39-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:10:39-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:10:39-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 12:11:31-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:11:31-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:11:31-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 12:14:45-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:14:45-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:14:45-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 12:16:16-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:16:16-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:16:16-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 12:19:55-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:19:55-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:19:55-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 12:21:00-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:21:00-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:21:00-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 12:21:38-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:21:38-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:21:38-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 12:21:58-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:21:58-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:21:58-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 12:22:19-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:22:19-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:22:19-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 12:23:42-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:23:42-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:23:42-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 12:24:06-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:24:06-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:24:06-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 12:24:30-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:24:30-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:24:30-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 12:25:00-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:25:00-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:25:00-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 12:25:27-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:25:27-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:25:27-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 12:26:22-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:26:22-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:26:22-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 12:27:02-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:27:02-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:27:02-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 12:28:17-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:28:17-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:28:17-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 12:29:10-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:29:10-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:29:10-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 12:29:37-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:29:37-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:29:37-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 12:30:30-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:30:30-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:30:30-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 12:31:02-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:31:02-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:31:02-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 12:31:31-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:31:31-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:31:31-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 12:32:18-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:32:18-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:32:18-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 12:33:35-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:33:35-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:33:35-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 12:34:14-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:34:14-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:34:14-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 12:35:03-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:35:03-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:35:03-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 12:35:38-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:35:38-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:35:38-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 12:36:34-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:36:34-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:36:34-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 12:41:07-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:41:07-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:41:07-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 12:42:28-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:42:28-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:42:28-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 12:43:23-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:43:23-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:43:23-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 12:43:47-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:43:47-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:43:47-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 12:53:21-error: Failed to load module file:///Users/chandankrishnani/CocosPractice/Snake_Ladder/assets/Typescript/chan.ts: SyntaxError: unknown: Missing semicolon (326:12)
+
+  324 |   }
+  325 |
+> 326 |     start () {
+      |             ^
+  327 |     
+  328 |     this.layer=this.abc.getLayer("MAIN"); 
+  329 |     let nd:any=null;.
+2021-09-20 12:53:21-error: Failed to load module file:///Users/chandankrishnani/CocosPractice/Snake_Ladder/assets/Typescript/chan.ts: SyntaxError: unknown: Missing semicolon (326:12)
+
+  324 |   }
+  325 |
+> 326 |     start () {
+      |             ^
+  327 |     
+  328 |     this.layer=this.abc.getLayer("MAIN"); 
+  329 |     let nd:any=null;.
+2021-09-20 12:53:21-warn: [Scene] Missing class: 468080QwwVFfav43bjlXf9s
+2021-09-20 12:53:21-error: [Scene] Script "468080QwwVFfav43bjlXf9s" attached to "Bg" is missing or invalid. Detailed information:
+Script UUID: "46808d10-c305-457d-abf8-ddb8e55dff6c"
+Class ID: "468080QwwVFfav43bjlXf9s"
+
+2021-09-20 12:53:21-error: [Scene] Script "468080QwwVFfav43bjlXf9s" attached to "Bg" is missing or invalid. Detailed information:
+Script UUID: "46808d10-c305-457d-abf8-ddb8e55dff6c"
+Class ID: "468080QwwVFfav43bjlXf9s"
+
+2021-09-20 12:53:21-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:53:21-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:53:21-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 12:53:44-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:53:44-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:53:44-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 12:54:44-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:54:44-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:54:44-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 12:55:44-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:55:44-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:55:44-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 12:56:43-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:56:43-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:56:43-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 12:59:50-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:59:50-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 12:59:50-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 13:01:05-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 13:01:05-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 13:01:05-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 13:01:26-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 13:01:26-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 13:01:26-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 13:04:41-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 13:04:41-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 13:04:41-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 13:06:07-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 13:06:07-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 13:06:07-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 13:08:18-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 13:08:18-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 13:08:18-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 13:12:50-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 13:12:50-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 13:12:50-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 13:13:15-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 13:13:15-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 13:13:15-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 13:14:18-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 13:14:18-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 13:14:18-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 13:15:34-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 13:15:34-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 13:15:34-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 13:16:23-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 13:16:23-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 13:16:23-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 13:53:35-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 13:53:35-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 13:53:35-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 14:14:13-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 14:14:13-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 14:14:13-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 14:21:02-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 14:21:02-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 14:21:02-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 14:21:26-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 14:21:26-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 14:21:26-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 14:21:48-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 14:21:48-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 14:21:48-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 14:22:35-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 14:22:35-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 14:22:35-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 14:22:58-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 14:22:58-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 14:22:58-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 14:29:02-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 14:29:02-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 14:29:02-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 14:29:39-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 14:29:39-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 14:29:39-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 14:31:24-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 14:31:24-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 14:31:24-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 14:35:10-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 14:35:10-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 14:35:10-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 14:36:09-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 14:36:09-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 14:36:09-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 14:36:18-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 14:36:18-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 14:36:18-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 14:45:12-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 14:45:12-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 14:45:12-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 14:47:54-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 14:47:54-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 14:47:54-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 14:51:38-error: Failed to load module file:///Users/chandankrishnani/CocosPractice/Snake_Ladder/assets/Typescript/chan.ts: SyntaxError: unknown: Unexpected token, expected "(" (229:6)
+
+  227 |         if
+  228 |
+> 229 |       }
+      |       ^
+  230 |
+  231 |     }
+  232 |     animatemove(i:number).
+2021-09-20 14:51:38-error: Failed to load module file:///Users/chandankrishnani/CocosPractice/Snake_Ladder/assets/Typescript/chan.ts: SyntaxError: unknown: Unexpected token, expected "(" (229:6)
+
+  227 |         if
+  228 |
+> 229 |       }
+      |       ^
+  230 |
+  231 |     }
+  232 |     animatemove(i:number).
+2021-09-20 14:51:38-warn: [Scene] Missing class: 468080QwwVFfav43bjlXf9s
+2021-09-20 14:51:38-error: [Scene] Script "468080QwwVFfav43bjlXf9s" attached to "Bg" is missing or invalid. Detailed information:
+Script UUID: "46808d10-c305-457d-abf8-ddb8e55dff6c"
+Class ID: "468080QwwVFfav43bjlXf9s"
+
+2021-09-20 14:51:38-error: [Scene] Script "468080QwwVFfav43bjlXf9s" attached to "Bg" is missing or invalid. Detailed information:
+Script UUID: "46808d10-c305-457d-abf8-ddb8e55dff6c"
+Class ID: "468080QwwVFfav43bjlXf9s"
+
+2021-09-20 14:51:38-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 14:51:38-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 14:51:38-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 14:52:11-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 14:52:11-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 14:52:11-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 14:56:46-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 14:56:46-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 14:56:46-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 15:02:16-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 15:02:16-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 15:02:16-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 15:13:54-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 15:13:54-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 15:13:54-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 15:16:16-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 15:16:16-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 15:16:16-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 15:21:33-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 15:21:33-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 15:21:33-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 15:21:59-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 15:21:59-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 15:21:59-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 15:26:08-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 15:26:08-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 15:26:08-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 15:36:48-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 15:36:48-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 15:36:48-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 15:38:17-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 15:38:17-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 15:38:17-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 15:39:21-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 15:39:21-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 15:39:21-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 16:02:59-log: [Scene] don't support this function in current mode prefab setCurEditTime
+2021-09-20 16:03:01-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 16:03:01-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 16:03:01-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 16:04:16-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 16:04:16-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 16:04:16-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 16:06:27-error: [preview-error]Uncaught Error: TiledLayer.getTiledTileAt: invalid position in http://localhost:7456/scripting/engine/bin/.cache/dev/preview/bundled/index.js
+2021-09-20 16:10:40-error: [preview-error]Uncaught TypeError: Cannot read properties of null (reading 'pause') in http://localhost:7456/scripting/x/mods/fs/0/assets/Typescript/chan.js
+2021-09-20 16:14:03-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 16:14:03-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 16:14:03-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 16:14:13-error: [preview-error]Uncaught TypeError: Cannot read properties of null (reading 'pause') in http://localhost:7456/scripting/x/mods/fs/0/assets/Typescript/chan.js
+2021-09-20 16:15:01-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 16:15:01-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 16:15:01-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 16:15:14-error: [preview-error]Uncaught TypeError: addComponent: The component to add must be child class of cc.Component in http://localhost:7456/scripting/engine/bin/.cache/dev/preview/bundled/index.js
+2021-09-20 16:16:18-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 16:16:18-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 16:16:18-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 16:23:35-log: [Scene] don't support this function in current mode prefab setCurEditTime
+2021-09-20 16:23:35-warn: [Scene] can't find node in current scene: 39Hi8Dk1hCn6llnB8eMfy4
+2021-09-20 16:23:35-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 16:23:35-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 16:23:35-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 16:23:35-warn: [Window] Get animation clip data failed! node 39Hi8Dk1hCn6llnB8eMfy4, clip 15e37c6e-d039-4c30-a9bb-6b7f490ef7ab
+2021-09-20 16:23:35-warn: [Window] Get animation clip data failed! node 39Hi8Dk1hCn6llnB8eMfy4, clip 
+2021-09-20 16:25:11-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 16:25:11-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 16:25:11-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 16:26:07-log: [Scene] Animation node(33iKjTamRK4ZMAUV+waMKy)doesn't exist
+2021-09-20 16:26:16-warn: [Scene] can't find node in current scene: 03F09cspdM8ZFHI8RSm1Re
+2021-09-20 16:26:16-log: [Scene] don't support this function in current mode general setCurEditTime
+2021-09-20 16:26:16-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 16:26:16-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 16:26:16-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 16:26:22-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 16:26:22-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 16:26:22-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 16:28:37-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 16:28:37-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 16:28:37-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 16:32:34-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 16:32:34-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 16:32:34-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 16:34:12-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 16:34:12-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 16:34:12-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 16:35:18-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 16:35:18-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 16:35:18-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 16:36:41-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 16:36:41-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 16:36:41-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 16:37:35-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 16:37:35-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 16:37:35-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 16:38:08-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 16:38:08-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 16:38:08-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 16:40:59-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 16:40:59-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 16:40:59-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 16:41:41-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 16:41:41-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 16:41:41-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 16:48:55-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 16:48:55-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 16:48:55-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 17:00:43-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 17:00:43-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 17:00:43-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 17:01:44-warn: [Scene] can't find node in current scene: 81ing2OvZKK5UwfmKwxIt7
+2021-09-20 17:01:44-log: [Scene] don't support this function in current mode general setCurEditTime
+2021-09-20 17:01:44-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 17:01:44-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 17:01:44-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 17:04:12-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 17:04:12-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 17:04:12-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 17:05:31-warn: [Scene] can't find node in current scene: f5+tTzFsxCmZ89qpYwvPOP
+2021-09-20 17:05:31-log: [Scene] don't support this function in current mode general setCurEditTime
+2021-09-20 17:05:31-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 17:05:31-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 17:05:31-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 17:05:43-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 17:05:43-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 17:05:43-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 17:07:10-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 17:07:10-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 17:07:10-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 17:10:19-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 17:10:19-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 17:10:19-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 17:15:54-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 17:15:54-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 17:15:54-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 17:17:34-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 17:17:34-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 17:17:34-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 17:18:49-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 17:18:49-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 17:18:49-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 17:19:28-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 17:19:28-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 17:19:28-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 17:22:18-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 17:22:18-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 17:22:18-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 17:30:21-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 17:30:21-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 17:30:21-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 17:37:06-error: Failed to load module file:///Users/chandankrishnani/CocosPractice/Snake_Ladder/assets/Typescript/chan.ts: SyntaxError: unknown: Unexpected token, expected "," (134:51)
+
+  132 |     this.animation1 = this.player1_dice.getComponent(Animation);
+  133 |     tween(this.player1_butt)
+> 134 |     .repeatForever( tween(this.player1_butt).by(0.2{scale: new Vec3(1.2,1.2,1)}))
+      |                                                    ^
+  135 |     .start();
+  136 |    
+  137 |.
+2021-09-20 17:37:06-error: Failed to load module file:///Users/chandankrishnani/CocosPractice/Snake_Ladder/assets/Typescript/chan.ts: SyntaxError: unknown: Unexpected token, expected "," (134:51)
+
+  132 |     this.animation1 = this.player1_dice.getComponent(Animation);
+  133 |     tween(this.player1_butt)
+> 134 |     .repeatForever( tween(this.player1_butt).by(0.2{scale: new Vec3(1.2,1.2,1)}))
+      |                                                    ^
+  135 |     .start();
+  136 |    
+  137 |.
+2021-09-20 17:37:06-warn: [Scene] Missing class: 468080QwwVFfav43bjlXf9s
+2021-09-20 17:37:06-error: [Scene] Script "468080QwwVFfav43bjlXf9s" attached to "Bg" is missing or invalid. Detailed information:
+Script UUID: "46808d10-c305-457d-abf8-ddb8e55dff6c"
+Class ID: "468080QwwVFfav43bjlXf9s"
+
+2021-09-20 17:37:06-error: [Scene] Script "468080QwwVFfav43bjlXf9s" attached to "Bg" is missing or invalid. Detailed information:
+Script UUID: "46808d10-c305-457d-abf8-ddb8e55dff6c"
+Class ID: "468080QwwVFfav43bjlXf9s"
+
+2021-09-20 17:37:06-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 17:37:06-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 17:37:06-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 17:38:41-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 17:38:41-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 17:38:41-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 17:40:19-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 17:40:19-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 17:40:19-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 17:44:00-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 17:44:00-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 17:44:00-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 17:55:28-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 17:55:28-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 17:55:28-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 17:55:28-error: Message response error: parameter error
+2021-09-20 17:57:22-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 17:57:22-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 17:57:22-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 17:57:22-error: Message response error: parameter error
+2021-09-20 18:00:09-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 18:00:09-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 18:00:09-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 18:00:09-error: Message response error: parameter error
+2021-09-20 18:00:55-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 18:00:55-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 18:00:55-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 18:00:55-error: Message response error: parameter error
+2021-09-20 18:01:29-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 18:01:29-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 18:01:29-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 18:01:29-error: Message response error: parameter error
+2021-09-20 18:02:41-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 18:02:41-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 18:02:41-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 18:02:41-error: Message response error: parameter error
+2021-09-20 18:04:49-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 18:04:49-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 18:04:49-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 18:04:50-error: Message response error: parameter error
+2021-09-20 18:07:04-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 18:07:04-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 18:07:04-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 18:07:04-error: Message response error: parameter error
+2021-09-20 18:10:25-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 18:10:25-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 18:10:25-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 18:10:25-error: Message response error: parameter error
+2021-09-20 18:12:15-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 18:12:15-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 18:12:15-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 18:12:16-error: Message response error: parameter error
+2021-09-20 18:21:33-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 18:21:33-error: [Scene] The Asset used by component "cc.Animation" is missing. Detailed information:
+Missing uuid: "fbcd478a-03a1-45d6-b295-dd3323d2b4e7"
+
+2021-09-20 18:21:33-log: [Scene] cocos2d: TMXFormat: Unsupported TMX version: 1.5
+2021-09-20 18:21:33-error: Message response error: parameter error

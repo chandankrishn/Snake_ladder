@@ -1,0 +1,30 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "pngwing.com (11)",
+    "atlas": "",
+    "rect": {
+      "x": 109,
+      "y": 52,
+      "width": 750,
+      "height": 1728
+    },
+    "offset": {
+      "x": -16,
+      "y": -16
+    },
+    "originalSize": {
+      "width": 1000,
+      "height": 1800
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "texture": "a49d6128-16cf-4776-a01f-0428b8feb271@6c48a",
+    "packable": true
+  }
+}

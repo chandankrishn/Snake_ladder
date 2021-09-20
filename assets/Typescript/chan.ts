@@ -1,5 +1,5 @@
 
-import { _decorator, Component, Node, TiledMap, tween, Vec2, Vec3, TiledLayer, UITransform, TiledTile, SpriteFrame, Sprite, Label, Prefab, instantiate, Button, color, Color, math, toDegree} from 'cc';
+import { _decorator, Component, Node, TiledMap, tween, Vec2, Vec3, TiledLayer, UITransform, Animation, TiledTile, SpriteFrame, Sprite, Label, Prefab, instantiate, Button, color, Color, math, toDegree, director} from 'cc';
 const { ccclass, property } = _decorator;
 
 /**
@@ -45,10 +45,20 @@ export class Chan extends Component {
     
     @property(Prefab)
     snake=null;
+    @property(Prefab)
+    ladder=null;
 
 
     @property(Prefab)
     dice_pre=null;
+
+    
+    @property(Button)
+    player1_butt=null;
+    
+    @property(Button)
+    player2_butt=null;
+    
 
     player1_dice:any=null;
     player2_dice:any=null;
@@ -61,24 +71,32 @@ export class Chan extends Component {
     tile3: TiledTile=null;
     tile4:TiledTile=null;
     tile5:TiledTile=null;
+    tile6:TiledTile=null;
+    tile7:TiledTile=null;
     count:number=0;
 
     track:boolean=false;
     player1_current_pos=[0,10];
     player2_current_pos=[0,10];
+    animation1:any;
+    animation2:any;
 
     randomnumber(event:Event,abc:string)
-    {
-      
-      
+    {      
       let knight:any=this.knight;
       let robot:any=this.robot;
       if(abc=="knight" && this.player1_active)
       {
+           
+      this.animation1.play();
          
          this.player1_rand=Math.random()*6;
          this.player1_rand=Math.floor(this.player1_rand);
-         this.player1_dice.getComponent(Sprite).spriteFrame=this.dice[this.player1_rand];
+        tween(this.player1_dice)
+        .delay(0.8)
+        .call(()=>{this.player1_dice.getComponent(Sprite).spriteFrame=this.dice[this.player1_rand];})
+        .start();
+         
          robot.node.getComponent(Label).color=new Color(255,255,255);
          knight.node.getComponent(Label).color=new Color(255,255,0);
          this.move(abc,this.player1_rand);
@@ -90,25 +108,33 @@ export class Chan extends Component {
       {
         knight.node.getComponent(Label).color=new Color(255,255,255);
         robot.node.getComponent(Label).color=new Color(255,255,0);
- 
+          
+        this.animation2.play();
+      
         this.player2_rand=Math.random()*6;
         this.player2_rand=Math.floor(this.player2_rand);
-        this.player2_dice.getComponent(Sprite).spriteFrame=this.dice[this.player2_rand];
+        
+        tween(this.player2_dice)
+        .delay(0.8)
+        .call(()=>{this.player2_dice.getComponent(Sprite).spriteFrame=this.dice[this.player2_rand];})
+        .start();
+ 
         this.player1_active=true;
         this.move(abc,this.player2_rand);
       }
       
     }
+
     onLoad()
     {
       this.player1_dice=instantiate(this.dice_pre);
       this.node.addChild(this.player1_dice);
-
-      
+    this.animation1 = this.player1_dice.getComponent(Animation);
       this.player1_dice.setPosition(403,53,1);
       this.player2_dice=instantiate(this.dice_pre);
       this.node.addChild(this.player2_dice);
       this.player2_dice.setPosition(-400,53,1);
+      this.animation2 = this.player2_dice.getComponent(Animation);
 
     }
 
@@ -155,7 +181,11 @@ export class Chan extends Component {
           this.animatemove2(1)
 
         }
-       
+        if(this.ladder_and_snake_check())
+        {
+          this.laddermove1( rand/2);
+        }
+     
       }
      else
       {
@@ -163,7 +193,6 @@ export class Chan extends Component {
         {
           if(this.player2_current_pos[1]%2==0)
           {
-
             if(this.player2_current_pos[0]==10)
             {
               this.player2_current_pos[1]--;
@@ -193,11 +222,73 @@ export class Chan extends Component {
         {
           this.player1_current_pos[0]=1;
           this.player1_current_pos[1]=10;
-          this.animatemove(1)
+          this.animatemove(i);
 
+          
         }
-       
+        if(this.ladder_and_snake_check())
+        {
+          this.laddermove2(rand/2);
+        }
       }
+
+    }
+    laddermove1(i:number)
+    {
+      this.tile1=this.layer.getTiledTileAt(this.player1_current_pos[0],this.player1_current_pos[1],true);
+      tween(this.character1.node)
+      .delay(i+0.5)
+      .to(0.6,{position : new Vec3(this.tile1.node.position.x,this.tile1.node.position.y,10)})
+      .start();
+
+    }
+    laddermove2(i:number)
+    {
+      this.tile2=this.layer.getTiledTileAt(this.player2_current_pos[0],this.player2_current_pos[1],true);
+      tween(this.character2.node)
+      .delay(i+0.5)
+      .to(0.6,{position : new Vec3(this.tile2.node.position.x,this.tile2.node.position.y,10)})
+      .start();
+
+    }
+
+
+
+    ladder_and_snake_check()
+    {
+      for(var i=0;i<=4;i++)
+      {
+        if(this.player1_current_pos[0]==this.snake_index[i][0] && this.player1_current_pos[1]==this.snake_index[i][1])
+        {
+          this.player1_current_pos[0]=this.snake_index[i][2];
+          this.player1_current_pos[1]=this.snake_index[i][3];
+          return true;
+        }
+        if(this.player2_current_pos[0]==this.snake_index[i][0] && this.player2_current_pos[1]==this.snake_index[i][1])
+        {
+          this.player2_current_pos[0]=this.snake_index[i][2];
+          this.player2_current_pos[1]=this.snake_index[i][3];
+          return true;
+        
+        }
+      }
+      for(var i=0;i<3;i++)
+      {
+        if(this.player1_current_pos[0]==this.ladder_index[i][2] && this.player1_current_pos[1]==this.ladder_index[i][3])
+        {
+          this.player1_current_pos[0]=this.ladder_index[i][0];
+          this.player1_current_pos[1]=this.ladder_index[i][1];
+          return true;
+        
+        }
+        if(this.player2_current_pos[0]==this.ladder_index[i][2] && this.player2_current_pos[1]==this.ladder_index[i][3])
+        {
+          this.player2_current_pos[0]=this.ladder_index[i][0];
+          this.player2_current_pos[1]=this.ladder_index[i][1];
+          return true;
+        }
+      }
+      return false;
 
     }
     animatemove(i:number)
@@ -205,7 +296,10 @@ export class Chan extends Component {
       this.tile1=this.layer.getTiledTileAt(this.player1_current_pos[0],this.player1_current_pos[1],true);
       tween(this.character1.node)
       .delay(i/2)
+      .by(0.2,{position : new Vec3(0,40,10)})
       .to(0.4,{position : new Vec3(this.tile1.node.position.x,this.tile1.node.position.y,10)})
+      .by(0.2,{position : new Vec3(0,-40,10)})
+      .by(0.2,{position : new Vec3(0,40,10)})
       .start();
 
 
@@ -215,40 +309,118 @@ export class Chan extends Component {
       this.tile2=this.layer.getTiledTileAt(this.player2_current_pos[0],this.player2_current_pos[1],true);
       tween(this.character2.node)
       .delay(i/2)
+      .by(0.2,{position : new Vec3(0,40,10)})
       .to(0.4,{position : new Vec3(this.tile2.node.position.x,this.tile2.node.position.y,10)})
+
+      .by(0.2,{position : new Vec3(0,-40,10)})
+      .by(0.2,{position : new Vec3(0,40,10)})
       .start();
 
 
     }
     snake_array:any=[];
-    snakeAndladder()
+    snake_index:number[][]=[];
+    snake_count:number=0;
+
+    randomsnake(max:number,min:number,row:number,tail_pos:number)
     {
-      console.log("Okay called");
-   
-      this.tile4=this.layer.getTiledTileAt(6,1,true);
-      this.tile5=this.layer.getTiledTileAt(9,10,true);
+      let Head_ran:number=Math. floor(Math. random() * (max - min + 1)) + min;
+      let Tail_ran:number=Math. floor(Math. random() * (max - min + 1)) + min;
+      
+      if(row==1)
+      {
+        this.tile4=this.layer.getTiledTileAt(Head_ran,row,true);
+        this.tile5=this.layer.getTiledTileAt(Tail_ran,10,true);  
+      }
+      else
+      {
+      
+        this.tile4=this.layer.getTiledTileAt(Head_ran,row,true);
+        this.tile5=this.layer.getTiledTileAt(Tail_ran,tail_pos,true);  
+
+      }
+      this.snake_index.push([Head_ran,row,Tail_ran,tail_pos]);
       let diff1:number=this.tile4.node.position.y-this.tile5.node.position.y;
       let diff2:number=this.tile4.node.position.x-this.tile5.node.position.x;
-      this.snake_array[0]=instantiate(this.snake);
-      this.abc.node.addChild(this.snake_array[0]);
-      this.snake_array[0].setPosition(this.tile4.node.position.x+220,this.tile4.node.position.y+220,1);
-      this.snake_array[0].setContentSize(400,diff1);
+      this.snake_array[this.snake_count]=instantiate(this.snake);
+      this.abc.node.addChild(this.snake_array[this.snake_count]);
+      this.snake_array[this.snake_count].setContentSize(420,diff1);
+      this.snake_array[this.snake_count].setPosition(this.tile4.node.position.x+220,this.tile4.node.position.y+220,1);
       let ang = Math.atan2(diff1,diff2);
-      console.log(toDegree(ang)-90);
-      tween(this.snake_array[0])
+      tween(this.snake_array[this.snake_count])
       .to(0.5,{angle : toDegree(ang)-90})
       .start();
+      this.snake_count++;
 
-      // this.snake_array[0].node.setSiblingIndex(300);
+    } 
+    print_position()
+    {
+      console.log("ladder positions !! ");
+      for(let i=0;i<4;i++)
+      {
+        console.log("start pos"+this.snake_index[i][0] + this.snake_index[i][1]  );
+        console.log("End pos"+this.snake_index[i][2] + this.snake_index[i][3]  );
+       
+      }
 
+    }   
+    ladder_count:number=0;
+    ladder_array:any=[];
+    ladder_index:number[][]=[];
     
-
+    ladderrandom(max:number,min:number,start_pos:number,end_pos:number)
+    {
+      let Head_ran:number=Math. floor(Math. random() * (max - min + 1)) + min;
+      let Tail_ran:number=Math. floor(Math. random() * (max - min + 1)) + min;
+      this.tile6=this.layer.getTiledTileAt(Head_ran,start_pos,true);
+      this.tile7=this.layer.getTiledTileAt(Tail_ran,end_pos,true);  
+        this.ladder_index.push([Head_ran,start_pos,Tail_ran,end_pos]);
+        console.log(this.ladder_index);
+      
+      let diff1:number=this.tile6.node.position.y-this.tile7.node.position.y;
+      let diff2:number=this.tile6.node.position.x-this.tile7.node.position.x;
+      this.ladder_array[this.ladder_count]=instantiate(this.ladder);
+      this.abc.node.addChild(this.ladder_array[this.ladder_count]);
+      this.ladder_array[this.ladder_count].setContentSize(420,diff1);
+      this.ladder_array[this.ladder_count].setPosition(this.tile6.node.position.x+200,this.tile6.node.position.y+150,1);
+    
+      let ang = Math.atan2(diff1,diff2);
+      tween(this.ladder_array[this.ladder_count])
+      .to(0.5,{angle : toDegree(ang)-90})
+      .start();
+      this.ladder_count++;
+  
     }
+    
+    snakeAndladder()
+    {
+      var j=10;
+    for(var i=1;i<=5;i++)
+    {
+    
+    
+      if(i%2!=0)
+      {
+      this.randomsnake(5,2,i,j);
+      }
+      else
+      {
+        this.randomsnake(10,5,i,j);
+      }
+      j=j-1;
+  
+    }
+        this.ladderrandom(2,5,7,10);
+        this.ladderrandom(6,10,1,9);
+        this.ladderrandom(1,4,4,6);
+        this.print_position();
+  
+  
+}
 
     start () {
     
     this.layer=this.abc.getLayer("MAIN"); 
-   
     let nd:any=null;
     let snake:any=null;
     
@@ -280,8 +452,8 @@ export class Chan extends Component {
     this.tile2=this.layer.getTiledTileAt(1,10,true);
     this.character1.node.setPosition(this.tile1.node.position.x,this.tile1.node.position.y,1);
     this.character2.node.setPosition(this.tile2.node.position.x,this.tile2.node.position.y,1);
-    this.character1.node.setSiblingIndex(120);
-    this.character2.node.setSiblingIndex(120);
+    this.character1.node.setSiblingIndex(2000);
+    this.character2.node.setSiblingIndex(2000);
     this.snakeAndladder();
        
         // [3]
@@ -289,6 +461,10 @@ export class Chan extends Component {
 
      update (deltaTime: number) 
      {
+       if(this.player1_current_pos[0]<1 && this.player1_current_pos[1]<1 || this.player2_current_pos[0]<1 && this.player2_current_pos[1]<1 )
+       {
+         director.pause();
+       }
  
          // [4]
      }

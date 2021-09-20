@@ -1,6 +1,6 @@
 {
   "/Users/chandankrishnani/CocosPractice/Snake_Ladder/assets/scene": {
-    "time": 1631872744187.578,
+    "time": 1632119119351.1409,
     "uuid": "a39c5d7e-29a2-433d-b36e-ab5038886643",
     "missing": false
   },
@@ -38,7 +38,7 @@
     "time": 1631696130648.7053
   },
   "/Users/chandankrishnani/CocosPractice/Snake_Ladder/assets/scene/Main.scene": {
-    "time": 1631882053901.1812,
+    "time": 1632119061742.5938,
     "uuid": "deecf8fc-06b0-4d72-92d4-51d36242116a",
     "missing": false
   },
@@ -129,13 +129,8 @@
     "time": 1631696130808.1438
   },
   "/Users/chandankrishnani/CocosPractice/Snake_Ladder/assets/Assets/map": {
-    "time": 1631777296173.4087,
+    "time": 1632119099898.085,
     "uuid": "5ac9a189-da4c-4ab7-986a-4d3270a64caa",
-    "missing": false
-  },
-  "/Users/chandankrishnani/CocosPractice/Snake_Ladder/assets/Assets/map/6806962_preview.png": {
-    "time": 1631680515673.543,
-    "uuid": "0f6f2715-c062-47ba-b750-98333eab5b52",
     "missing": false
   },
   "/Users/chandankrishnani/CocosPractice/Snake_Ladder/assets/Assets/map/Board.tmx": {
@@ -153,21 +148,6 @@
     "uuid": "8128709e-0315-4685-aaed-f80b412336ef",
     "missing": false
   },
-  "/Users/chandankrishnani/CocosPractice/Snake_Ladder/assets/Assets/map/pngwing.com (1).png": {
-    "time": 1631687828566.3535,
-    "uuid": "67eee278-6eb9-4652-a37f-aaad5d57705c",
-    "missing": false
-  },
-  "/Users/chandankrishnani/CocosPractice/Snake_Ladder/assets/Assets/map/pngwing.com (2).png": {
-    "time": 1631688033852.414,
-    "uuid": "5364b725-4f29-4eb1-a77b-80d510537b09",
-    "missing": false
-  },
-  "/Users/chandankrishnani/CocosPractice/Snake_Ladder/assets/Assets/map/pngwing.com 2.png": {
-    "time": 1631686512944.7178,
-    "uuid": "e079eafa-2726-4c9a-8a17-d2300d4341ca",
-    "missing": false
-  },
   "/Users/chandankrishnani/CocosPractice/Snake_Ladder/assets/Assets/map/trees.tsx": {
     "time": 1631696968035.5833,
     "uuid": "25a85829-5109-4eaf-bad2-c76f9676ca43",
@@ -183,7 +163,7 @@
     "time": 1631697088454.5037
   },
   "/Users/chandankrishnani/CocosPractice/Snake_Ladder/assets/Assets/map/Board.tmx.meta": {
-    "time": 1631697088527.1882
+    "time": 1632112203009.35
   },
   "/Users/chandankrishnani/CocosPractice/Snake_Ladder/assets/Assets/map/6806962_preview.png.meta": {
     "time": 1631698064163.6792
@@ -201,7 +181,7 @@
     "time": 1631697927628.4802
   },
   "/Users/chandankrishnani/CocosPractice/Snake_Ladder/assets/Typescript/chan.ts": {
-    "time": 1631882056910.798,
+    "time": 1632142291010.768,
     "uuid": "46808d10-c305-457d-abf8-ddb8e55dff6c",
     "missing": false
   },
@@ -209,7 +189,7 @@
     "time": 1631706068178.5588
   },
   "/Users/chandankrishnani/CocosPractice/Snake_Ladder/assets/Assets/map/final": {
-    "time": 1631873351838.3928,
+    "time": 1632112196452.529,
     "uuid": "54374e45-5cf7-4ec6-9e80-70627692f61f",
     "missing": false
   },
@@ -287,11 +267,6 @@
   "/Users/chandankrishnani/CocosPractice/Snake_Ladder/assets/Assets/map/final/pngwing.com (7).png": {
     "time": 1631776398931.621,
     "uuid": "0112e89a-9b3c-44d9-bd2e-e690523b22d7",
-    "missing": false
-  },
-  "/Users/chandankrishnani/CocosPractice/Snake_Ladder/assets/Assets/map/final/unnamed.png": {
-    "time": 1631775149012.9873,
-    "uuid": "21368352-be0b-4fad-9b37-ef356b0bdd06",
     "missing": false
   },
   "/Users/chandankrishnani/CocosPractice/Snake_Ladder/assets/Assets/map/final/bg1.tsx.meta": {
@@ -380,7 +355,7 @@
     "time": 1631781328213.4956
   },
   "/Users/chandankrishnani/CocosPractice/Snake_Ladder/assets/scene/jkl.scene": {
-    "time": 1631786502517.586,
+    "time": 1632119147005.7537,
     "uuid": "04c1906e-2c3d-4243-8e67-8d3f132117d7",
     "missing": false
   },
@@ -394,11 +369,6 @@
   },
   "/Users/chandankrishnani/CocosPractice/Snake_Ladder/assets/scene/text.prefab.meta": {
     "time": 1631786490564.3577
-  },
-  "/Users/chandankrishnani/CocosPractice/Snake_Ladder/assets/scene.scene": {
-    "time": 1631872772034.6375,
-    "uuid": "71eb1733-571f-4296-8609-176035f3913e",
-    "missing": false
   },
   "/Users/chandankrishnani/CocosPractice/Snake_Ladder/assets/scene.scene.meta": {
     "time": 1631791015511.2559
@@ -460,7 +430,7 @@
     "time": 1631852924566.517
   },
   "/Users/chandankrishnani/CocosPractice/Snake_Ladder/assets/Typescript/1.prefab": {
-    "time": 1631854220946.1438,
+    "time": 1632134637022.1113,
     "uuid": "f9cbe9ba-ae1a-447d-8a4f-3c2304dc8945",
     "missing": false
   },
@@ -497,6 +467,57 @@
   "/Users/chandankrishnani/CocosPractice/Snake_Ladder/assets/Assets/map/final/pngwing.com (4).png": {
     "time": 1631873351752.7593,
     "uuid": "99b5a3e2-41fb-44e5-8edd-05f6f4ce3080",
+    "missing": false
+  },
+  "/Users/chandankrishnani/CocosPractice/Snake_Ladder/assets/Assets/map/final/images (1).png.meta": {
+    "time": 1632112130905.123
+  },
+  "/Users/chandankrishnani/CocosPractice/Snake_Ladder/assets/Assets/map/final/download.png": {
+    "time": 1632112134192.3945,
+    "uuid": "c3e88361-0189-4967-bc09-4af527a13d78",
+    "missing": false
+  },
+  "/Users/chandankrishnani/CocosPractice/Snake_Ladder/assets/Assets/map/final/download.png.meta": {
+    "time": 1632112134216.709
+  },
+  "/Users/chandankrishnani/CocosPractice/Snake_Ladder/assets/Assets/map/pngwing.com (11).png": {
+    "time": 1632119099892.9365,
+    "uuid": "a49d6128-16cf-4776-a01f-0428b8feb271",
+    "missing": false
+  },
+  "/Users/chandankrishnani/CocosPractice/Snake_Ladder/assets/Assets/map/pngwing.com (11).png.meta": {
+    "time": 1632119100061.3904
+  },
+  "/Users/chandankrishnani/CocosPractice/Snake_Ladder/assets/scene/pngwing.com (11).prefab": {
+    "time": 1632119110430.873,
+    "uuid": "59ada2da-3c93-45ff-8275-dbc9151f529b",
+    "missing": false
+  },
+  "/Users/chandankrishnani/CocosPractice/Snake_Ladder/assets/scene/pngwing.com (11).prefab.meta": {
+    "time": 1632119110431.991
+  },
+  "/Users/chandankrishnani/CocosPractice/Snake_Ladder/assets/scene/ladder.prefab.meta": {
+    "time": 1632119110431.991
+  },
+  "/Users/chandankrishnani/CocosPractice/Snake_Ladder/assets/scene/ladder.prefab": {
+    "time": 1632121414636.6216,
+    "uuid": "59ada2da-3c93-45ff-8275-dbc9151f529b",
+    "missing": false
+  },
+  "/Users/chandankrishnani/CocosPractice/Snake_Ladder/assets/diceRoll.anim": {
+    "time": 1632137724610.5112,
+    "uuid": "15e37c6e-d039-4c30-a9bb-6b7f490ef7ab",
+    "missing": false
+  },
+  "/Users/chandankrishnani/CocosPractice/Snake_Ladder/assets/diceRoll.anim.meta": {
+    "time": 1632133552748.2805
+  },
+  "/Users/chandankrishnani/CocosPractice/Snake_Ladder/assets/.anim.meta": {
+    "time": 1632140253159.575
+  },
+  "/Users/chandankrishnani/CocosPractice/Snake_Ladder/assets/.anim": {
+    "time": 1632142437957.8364,
+    "uuid": "9cacf190-c96f-48f8-a909-1daf2b9a76fa",
     "missing": false
   }
 }

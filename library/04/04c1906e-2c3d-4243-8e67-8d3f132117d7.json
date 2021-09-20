@@ -230,17 +230,17 @@
       "__id__": 6
     },
     "asset": {
-      "__uuid__": "8de706ea-8fab-44a8-87b7-25495afce2a9",
+      "__uuid__": "59ada2da-3c93-45ff-8275-dbc9151f529b",
       "__expectedType__": "cc.Prefab"
     },
-    "fileId": "dcrK7Bx3ZE4r3Q2O5gCPnF",
+    "fileId": "45M88LcvlFQ7JJC37OKgwE",
     "instance": {
       "__id__": 8
     }
   },
   {
     "__type__": "cc.PrefabInstance",
-    "fileId": "d4tHL+KihMhJIcS/zkKKBN",
+    "fileId": "1cdKM0d9NODJksDxQYX/zh",
     "mountedChildren": [],
     "mountedComponents": [],
     "propertyOverrides": [
@@ -267,12 +267,12 @@
     "propertyPath": [
       "_name"
     ],
-    "value": "text"
+    "value": "pngwing.com (11)"
   },
   {
     "__type__": "cc.TargetInfo",
     "localID": [
-      "dcrK7Bx3ZE4r3Q2O5gCPnF"
+      "45M88LcvlFQ7JJC37OKgwE"
     ]
   },
   {
@@ -285,9 +285,9 @@
     ],
     "value": {
       "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 0,
-      "z": 0
+      "x": -120.78974508397428,
+      "y": 171.83866707539605,
+      "z": -111.38994921644431
     }
   },
   {

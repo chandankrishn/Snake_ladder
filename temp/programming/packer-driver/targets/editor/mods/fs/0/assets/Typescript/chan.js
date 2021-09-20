@@ -1,7 +1,7 @@
 System.register(["cc"], function (_export, _context) {
   "use strict";
 
-  var _cclegacy, _decorator, Component, TiledMap, tween, Vec3, SpriteFrame, Sprite, Label, Prefab, instantiate, Button, Color, toDegree, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _dec9, _dec10, _dec11, _dec12, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _descriptor9, _descriptor10, _descriptor11, _temp, _crd, ccclass, property, Chan;
+  var _cclegacy, _decorator, Component, TiledMap, tween, Vec3, Animation, SpriteFrame, Sprite, Label, Prefab, instantiate, Button, Color, toDegree, director, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _dec9, _dec10, _dec11, _dec12, _dec13, _dec14, _dec15, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _descriptor9, _descriptor10, _descriptor11, _descriptor12, _descriptor13, _descriptor14, _temp, _crd, ccclass, property, Chan;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -19,6 +19,7 @@ System.register(["cc"], function (_export, _context) {
       TiledMap = _cc.TiledMap;
       tween = _cc.tween;
       Vec3 = _cc.Vec3;
+      Animation = _cc.Animation;
       SpriteFrame = _cc.SpriteFrame;
       Sprite = _cc.Sprite;
       Label = _cc.Label;
@@ -27,6 +28,7 @@ System.register(["cc"], function (_export, _context) {
       Button = _cc.Button;
       Color = _cc.Color;
       toDegree = _cc.toDegree;
+      director = _cc.director;
     }],
     execute: function () {
       _crd = true;
@@ -49,7 +51,7 @@ System.register(["cc"], function (_export, _context) {
        *
        */
 
-      _export("Chan", Chan = (_dec = ccclass('Chan'), _dec2 = property(TiledMap), _dec3 = property(Sprite), _dec4 = property(Sprite), _dec5 = property(Prefab), _dec6 = property(Label), _dec7 = property(SpriteFrame), _dec8 = property(Label), _dec9 = property(Label), _dec10 = property(Button), _dec11 = property(Prefab), _dec12 = property(Prefab), _dec(_class = (_class2 = (_temp = class Chan extends Component {
+      _export("Chan", Chan = (_dec = ccclass('Chan'), _dec2 = property(TiledMap), _dec3 = property(Sprite), _dec4 = property(Sprite), _dec5 = property(Prefab), _dec6 = property(Label), _dec7 = property(SpriteFrame), _dec8 = property(Label), _dec9 = property(Label), _dec10 = property(Button), _dec11 = property(Prefab), _dec12 = property(Prefab), _dec13 = property(Prefab), _dec14 = property(Button), _dec15 = property(Button), _dec(_class = (_class2 = (_temp = class Chan extends Component {
         constructor(...args) {
           super(...args);
 
@@ -73,7 +75,13 @@ System.register(["cc"], function (_export, _context) {
 
           _initializerDefineProperty(this, "snake", _descriptor10, this);
 
-          _initializerDefineProperty(this, "dice_pre", _descriptor11, this);
+          _initializerDefineProperty(this, "ladder", _descriptor11, this);
+
+          _initializerDefineProperty(this, "dice_pre", _descriptor12, this);
+
+          _initializerDefineProperty(this, "player1_butt", _descriptor13, this);
+
+          _initializerDefineProperty(this, "player2_butt", _descriptor14, this);
 
           _defineProperty(this, "player1_dice", null);
 
@@ -97,6 +105,10 @@ System.register(["cc"], function (_export, _context) {
 
           _defineProperty(this, "tile5", null);
 
+          _defineProperty(this, "tile6", null);
+
+          _defineProperty(this, "tile7", null);
+
           _defineProperty(this, "count", 0);
 
           _defineProperty(this, "track", false);
@@ -105,7 +117,21 @@ System.register(["cc"], function (_export, _context) {
 
           _defineProperty(this, "player2_current_pos", [0, 10]);
 
+          _defineProperty(this, "animation1", void 0);
+
+          _defineProperty(this, "animation2", void 0);
+
           _defineProperty(this, "snake_array", []);
+
+          _defineProperty(this, "snake_index", []);
+
+          _defineProperty(this, "snake_count", 0);
+
+          _defineProperty(this, "ladder_count", 0);
+
+          _defineProperty(this, "ladder_array", []);
+
+          _defineProperty(this, "ladder_index", []);
         }
 
         randomnumber(event, abc) {
@@ -113,9 +139,12 @@ System.register(["cc"], function (_export, _context) {
           let robot = this.robot;
 
           if (abc == "knight" && this.player1_active) {
+            this.animation1.play();
             this.player1_rand = Math.random() * 6;
             this.player1_rand = Math.floor(this.player1_rand);
-            this.player1_dice.getComponent(Sprite).spriteFrame = this.dice[this.player1_rand];
+            tween(this.player1_dice).delay(0.8).call(() => {
+              this.player1_dice.getComponent(Sprite).spriteFrame = this.dice[this.player1_rand];
+            }).start();
             robot.node.getComponent(Label).color = new Color(255, 255, 255);
             knight.node.getComponent(Label).color = new Color(255, 255, 0);
             this.move(abc, this.player1_rand);
@@ -126,9 +155,12 @@ System.register(["cc"], function (_export, _context) {
           if (abc == "robot" && !this.player1_active) {
             knight.node.getComponent(Label).color = new Color(255, 255, 255);
             robot.node.getComponent(Label).color = new Color(255, 255, 0);
+            this.animation2.play();
             this.player2_rand = Math.random() * 6;
             this.player2_rand = Math.floor(this.player2_rand);
-            this.player2_dice.getComponent(Sprite).spriteFrame = this.dice[this.player2_rand];
+            tween(this.player2_dice).delay(0.8).call(() => {
+              this.player2_dice.getComponent(Sprite).spriteFrame = this.dice[this.player2_rand];
+            }).start();
             this.player1_active = true;
             this.move(abc, this.player2_rand);
           }
@@ -137,10 +169,12 @@ System.register(["cc"], function (_export, _context) {
         onLoad() {
           this.player1_dice = instantiate(this.dice_pre);
           this.node.addChild(this.player1_dice);
+          this.animation1 = this.player1_dice.getComponent(Animation);
           this.player1_dice.setPosition(403, 53, 1);
           this.player2_dice = instantiate(this.dice_pre);
           this.node.addChild(this.player2_dice);
           this.player2_dice.setPosition(-400, 53, 1);
+          this.animation2 = this.player2_dice.getComponent(Animation);
         }
 
         move(abc, rand) {
@@ -170,6 +204,10 @@ System.register(["cc"], function (_export, _context) {
               this.player2_current_pos[1] = 10;
               this.animatemove2(1);
             }
+
+            if (this.ladder_and_snake_check()) {
+              this.laddermove1(rand / 2);
+            }
           } else {
             for (var i = 1; i <= rand; i++) {
               if (this.player2_current_pos[1] % 2 == 0) {
@@ -192,40 +230,159 @@ System.register(["cc"], function (_export, _context) {
             if (this.player1_current_pos[0] == this.player2_current_pos[0] && this.player1_current_pos[1] == this.player2_current_pos[1]) {
               this.player1_current_pos[0] = 1;
               this.player1_current_pos[1] = 10;
-              this.animatemove(1);
+              this.animatemove(i);
+            }
+
+            if (this.ladder_and_snake_check()) {
+              this.laddermove2(rand / 2);
             }
           }
         }
 
+        laddermove1(i) {
+          this.tile1 = this.layer.getTiledTileAt(this.player1_current_pos[0], this.player1_current_pos[1], true);
+          tween(this.character1.node).delay(i + 0.5).to(0.6, {
+            position: new Vec3(this.tile1.node.position.x, this.tile1.node.position.y, 10)
+          }).start();
+        }
+
+        laddermove2(i) {
+          this.tile2 = this.layer.getTiledTileAt(this.player2_current_pos[0], this.player2_current_pos[1], true);
+          tween(this.character2.node).delay(i + 0.5).to(0.6, {
+            position: new Vec3(this.tile2.node.position.x, this.tile2.node.position.y, 10)
+          }).start();
+        }
+
+        ladder_and_snake_check() {
+          for (var i = 0; i <= 4; i++) {
+            if (this.player1_current_pos[0] == this.snake_index[i][0] && this.player1_current_pos[1] == this.snake_index[i][1]) {
+              this.player1_current_pos[0] = this.snake_index[i][2];
+              this.player1_current_pos[1] = this.snake_index[i][3];
+              return true;
+            }
+
+            if (this.player2_current_pos[0] == this.snake_index[i][0] && this.player2_current_pos[1] == this.snake_index[i][1]) {
+              this.player2_current_pos[0] = this.snake_index[i][2];
+              this.player2_current_pos[1] = this.snake_index[i][3];
+              return true;
+            }
+          }
+
+          for (var i = 0; i < 3; i++) {
+            if (this.player1_current_pos[0] == this.ladder_index[i][2] && this.player1_current_pos[1] == this.ladder_index[i][3]) {
+              this.player1_current_pos[0] = this.ladder_index[i][0];
+              this.player1_current_pos[1] = this.ladder_index[i][1];
+              return true;
+            }
+
+            if (this.player2_current_pos[0] == this.ladder_index[i][2] && this.player2_current_pos[1] == this.ladder_index[i][3]) {
+              this.player2_current_pos[0] = this.ladder_index[i][0];
+              this.player2_current_pos[1] = this.ladder_index[i][1];
+              return true;
+            }
+          }
+
+          return false;
+        }
+
         animatemove(i) {
           this.tile1 = this.layer.getTiledTileAt(this.player1_current_pos[0], this.player1_current_pos[1], true);
-          tween(this.character1.node).delay(i / 2).to(0.4, {
+          tween(this.character1.node).delay(i / 2).by(0.2, {
+            position: new Vec3(0, 40, 10)
+          }).to(0.4, {
             position: new Vec3(this.tile1.node.position.x, this.tile1.node.position.y, 10)
+          }).by(0.2, {
+            position: new Vec3(0, -40, 10)
+          }).by(0.2, {
+            position: new Vec3(0, 40, 10)
           }).start();
         }
 
         animatemove2(i) {
           this.tile2 = this.layer.getTiledTileAt(this.player2_current_pos[0], this.player2_current_pos[1], true);
-          tween(this.character2.node).delay(i / 2).to(0.4, {
+          tween(this.character2.node).delay(i / 2).by(0.2, {
+            position: new Vec3(0, 40, 10)
+          }).to(0.4, {
             position: new Vec3(this.tile2.node.position.x, this.tile2.node.position.y, 10)
+          }).by(0.2, {
+            position: new Vec3(0, -40, 10)
+          }).by(0.2, {
+            position: new Vec3(0, 40, 10)
           }).start();
         }
 
-        snakeAndladder() {
-          console.log("Okay called");
-          this.tile4 = this.layer.getTiledTileAt(6, 1, true);
-          this.tile5 = this.layer.getTiledTileAt(9, 10, true);
+        randomsnake(max, min, row, tail_pos) {
+          let Head_ran = Math.floor(Math.random() * (max - min + 1)) + min;
+          let Tail_ran = Math.floor(Math.random() * (max - min + 1)) + min;
+
+          if (row == 1) {
+            this.tile4 = this.layer.getTiledTileAt(Head_ran, row, true);
+            this.tile5 = this.layer.getTiledTileAt(Tail_ran, 10, true);
+          } else {
+            this.tile4 = this.layer.getTiledTileAt(Head_ran, row, true);
+            this.tile5 = this.layer.getTiledTileAt(Tail_ran, tail_pos, true);
+          }
+
+          this.snake_index.push([Head_ran, row, Tail_ran, tail_pos]);
           let diff1 = this.tile4.node.position.y - this.tile5.node.position.y;
           let diff2 = this.tile4.node.position.x - this.tile5.node.position.x;
-          this.snake_array[0] = instantiate(this.snake);
-          this.abc.node.addChild(this.snake_array[0]);
-          this.snake_array[0].setPosition(this.tile4.node.position.x + 220, this.tile4.node.position.y + 220, 1);
-          this.snake_array[0].setContentSize(400, diff1);
+          this.snake_array[this.snake_count] = instantiate(this.snake);
+          this.abc.node.addChild(this.snake_array[this.snake_count]);
+          this.snake_array[this.snake_count].setContentSize(420, diff1);
+          this.snake_array[this.snake_count].setPosition(this.tile4.node.position.x + 220, this.tile4.node.position.y + 220, 1);
           let ang = Math.atan2(diff1, diff2);
-          console.log(toDegree(ang) - 90);
-          tween(this.snake_array[0]).to(0.5, {
+          tween(this.snake_array[this.snake_count]).to(0.5, {
             angle: toDegree(ang) - 90
-          }).start(); // this.snake_array[0].node.setSiblingIndex(300);
+          }).start();
+          this.snake_count++;
+        }
+
+        print_position() {
+          console.log("ladder positions !! ");
+
+          for (let i = 0; i < 4; i++) {
+            console.log("start pos" + this.snake_index[i][0] + this.snake_index[i][1]);
+            console.log("End pos" + this.snake_index[i][2] + this.snake_index[i][3]);
+          }
+        }
+
+        ladderrandom(max, min, start_pos, end_pos) {
+          let Head_ran = Math.floor(Math.random() * (max - min + 1)) + min;
+          let Tail_ran = Math.floor(Math.random() * (max - min + 1)) + min;
+          this.tile6 = this.layer.getTiledTileAt(Head_ran, start_pos, true);
+          this.tile7 = this.layer.getTiledTileAt(Tail_ran, end_pos, true);
+          this.ladder_index.push([Head_ran, start_pos, Tail_ran, end_pos]);
+          console.log(this.ladder_index);
+          let diff1 = this.tile6.node.position.y - this.tile7.node.position.y;
+          let diff2 = this.tile6.node.position.x - this.tile7.node.position.x;
+          this.ladder_array[this.ladder_count] = instantiate(this.ladder);
+          this.abc.node.addChild(this.ladder_array[this.ladder_count]);
+          this.ladder_array[this.ladder_count].setContentSize(420, diff1);
+          this.ladder_array[this.ladder_count].setPosition(this.tile6.node.position.x + 200, this.tile6.node.position.y + 150, 1);
+          let ang = Math.atan2(diff1, diff2);
+          tween(this.ladder_array[this.ladder_count]).to(0.5, {
+            angle: toDegree(ang) - 90
+          }).start();
+          this.ladder_count++;
+        }
+
+        snakeAndladder() {
+          var j = 10;
+
+          for (var i = 1; i <= 5; i++) {
+            if (i % 2 != 0) {
+              this.randomsnake(5, 2, i, j);
+            } else {
+              this.randomsnake(10, 5, i, j);
+            }
+
+            j = j - 1;
+          }
+
+          this.ladderrandom(2, 5, 7, 10);
+          this.ladderrandom(6, 10, 1, 9);
+          this.ladderrandom(1, 4, 4, 6);
+          this.print_position();
         }
 
         start() {
@@ -255,12 +412,16 @@ System.register(["cc"], function (_export, _context) {
           this.tile2 = this.layer.getTiledTileAt(1, 10, true);
           this.character1.node.setPosition(this.tile1.node.position.x, this.tile1.node.position.y, 1);
           this.character2.node.setPosition(this.tile2.node.position.x, this.tile2.node.position.y, 1);
-          this.character1.node.setSiblingIndex(120);
-          this.character2.node.setSiblingIndex(120);
+          this.character1.node.setSiblingIndex(2000);
+          this.character2.node.setSiblingIndex(2000);
           this.snakeAndladder(); // [3]
         }
 
-        update(deltaTime) {// [4]
+        update(deltaTime) {
+          if (this.player1_current_pos[0] < 1 && this.player1_current_pos[1] < 1 || this.player2_current_pos[0] < 1 && this.player2_current_pos[1] < 1) {
+            director.pause();
+          } // [4]
+
         }
 
       }, _temp), (_descriptor = _applyDecoratedDescriptor(_class2.prototype, "abc", [_dec2], {
@@ -329,7 +490,28 @@ System.register(["cc"], function (_export, _context) {
         initializer: function () {
           return null;
         }
-      }), _descriptor11 = _applyDecoratedDescriptor(_class2.prototype, "dice_pre", [_dec12], {
+      }), _descriptor11 = _applyDecoratedDescriptor(_class2.prototype, "ladder", [_dec12], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: function () {
+          return null;
+        }
+      }), _descriptor12 = _applyDecoratedDescriptor(_class2.prototype, "dice_pre", [_dec13], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: function () {
+          return null;
+        }
+      }), _descriptor13 = _applyDecoratedDescriptor(_class2.prototype, "player1_butt", [_dec14], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: function () {
+          return null;
+        }
+      }), _descriptor14 = _applyDecoratedDescriptor(_class2.prototype, "player2_butt", [_dec15], {
         configurable: true,
         enumerable: true,
         writable: true,

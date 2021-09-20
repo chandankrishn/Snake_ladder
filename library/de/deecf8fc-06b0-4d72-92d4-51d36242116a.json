@@ -1749,6 +1749,7 @@
       "__uuid__": "567c72c7-53cf-42f9-8647-c74d916f76b0",
       "__expectedType__": "cc.Prefab"
     },
+    "ladder": null,
     "dice_pre": {
       "__uuid__": "f9cbe9ba-ae1a-447d-8a4f-3c2304dc8945",
       "__expectedType__": "cc.Prefab"

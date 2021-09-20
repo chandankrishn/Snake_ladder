@@ -1,0 +1,30 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "download",
+    "atlas": "",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 242,
+      "height": 208
+    },
+    "offset": {
+      "x": 0,
+      "y": 0
+    },
+    "originalSize": {
+      "width": 242,
+      "height": 208
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "texture": "c3e88361-0189-4967-bc09-4af527a13d78@6c48a",
+    "packable": true
+  }
+}

@@ -1,6 +1,6 @@
 {
   "cce:/internal/x/cc": {
-    "mTimestamp": 8501.118205999956,
+    "mTimestamp": 10261.939686999947,
     "chunkId": "quick-pack:/cce/internal/x/cc.js",
     "imports": [
       {
@@ -299,7 +299,7 @@
     ]
   },
   "cce:/internal/x/prerequisite-imports": {
-    "mTimestamp": 29700738.71922,
+    "mTimestamp": 30577674.25982,
     "chunkId": "quick-pack:/cce/internal/x/prerequisite-imports.js",
     "imports": [
       {
@@ -381,7 +381,7 @@
     ]
   },
   "file:///Users/chandankrishnani/CocosPractice/Snake_Ladder/assets/Typescript/chan.ts": {
-    "mTimestamp": 1631882056910.798,
+    "mTimestamp": 1632142291010.768,
     "chunkId": "assets/Typescript/chan.js",
     "imports": [
       {
@@ -392,11 +392,11 @@
         "loc": {
           "start": {
             "line": 2,
-            "column": 195
+            "column": 216
           },
           "end": {
             "line": 2,
-            "column": 199
+            "column": 220
           }
         }
       }

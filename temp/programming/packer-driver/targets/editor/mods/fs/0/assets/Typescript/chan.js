@@ -1,7 +1,7 @@
 System.register(["cc"], function (_export, _context) {
   "use strict";
 
-  var _cclegacy, _decorator, Component, TiledMap, tween, Vec3, Animation, SpriteFrame, Sprite, Label, Prefab, instantiate, Button, Color, toDegree, director, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _dec9, _dec10, _dec11, _dec12, _dec13, _dec14, _dec15, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _descriptor9, _descriptor10, _descriptor11, _descriptor12, _descriptor13, _descriptor14, _temp, _crd, ccclass, property, Chan;
+  var _cclegacy, _decorator, Component, TiledMap, tween, Vec3, Animation, SpriteFrame, Sprite, Label, Prefab, instantiate, Button, Color, toDegree, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _dec9, _dec10, _dec11, _dec12, _dec13, _dec14, _dec15, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _descriptor9, _descriptor10, _descriptor11, _descriptor12, _descriptor13, _descriptor14, _temp, _crd, ccclass, property, Chan;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -28,7 +28,6 @@ System.register(["cc"], function (_export, _context) {
       Button = _cc.Button;
       Color = _cc.Color;
       toDegree = _cc.toDegree;
-      director = _cc.director;
     }],
     execute: function () {
       _crd = true;
@@ -121,6 +120,16 @@ System.register(["cc"], function (_export, _context) {
 
           _defineProperty(this, "animation2", void 0);
 
+          _defineProperty(this, "sum", 0);
+
+          _defineProperty(this, "player1_entry", false);
+
+          _defineProperty(this, "player2_entry", false);
+
+          _defineProperty(this, "player1_cur_x", void 0);
+
+          _defineProperty(this, "player2_cur_x", void 0);
+
           _defineProperty(this, "snake_array", []);
 
           _defineProperty(this, "snake_index", []);
@@ -134,35 +143,71 @@ System.register(["cc"], function (_export, _context) {
           _defineProperty(this, "ladder_index", []);
         }
 
+        entrycontrol(rand) {
+          if (!this.player1_entry) {
+            if (rand === 1 || rand === 6) {
+              this.player1_current_pos[0] = 0;
+              this.player1_current_pos[1] = 10;
+              this.animatemove(1);
+              this.player1_entry = true;
+              return true;
+            }
+
+            return false;
+          }
+
+          return true;
+        }
+
+        entrycontrol2(rand) {
+          if (!this.player2_entry) {
+            if (rand === 1 || rand === 6) {
+              this.player2_current_pos[0] = 0;
+              this.player2_current_pos[1] = 10;
+              this.animatemove2(1);
+              this.player2_entry = true;
+              return true;
+            }
+
+            return false;
+          }
+
+          return true;
+        }
+
         randomnumber(event, abc) {
           let knight = this.knight;
           let robot = this.robot;
 
           if (abc == "knight" && this.player1_active) {
             this.animation1.play();
-            this.player1_rand = Math.random() * 6;
-            this.player1_rand = Math.floor(this.player1_rand);
+            this.player1_rand = Math.floor(Math.random() * (6 - 1 + 1)) + 1;
             tween(this.player1_dice).delay(0.8).call(() => {
-              this.player1_dice.getComponent(Sprite).spriteFrame = this.dice[this.player1_rand];
+              this.player1_dice.getComponent(Sprite).spriteFrame = this.dice[this.player1_rand - 1];
             }).start();
             robot.node.getComponent(Label).color = new Color(255, 255, 255);
             knight.node.getComponent(Label).color = new Color(255, 255, 0);
-            this.move(abc, this.player1_rand);
+
+            if (this.entrycontrol(this.player1_rand)) {
+              this.move(abc, this.player1_rand);
+            }
+
             this.player1_active = false;
-            console.log(this.track);
           }
 
           if (abc == "robot" && !this.player1_active) {
             knight.node.getComponent(Label).color = new Color(255, 255, 255);
             robot.node.getComponent(Label).color = new Color(255, 255, 0);
             this.animation2.play();
-            this.player2_rand = Math.random() * 6;
-            this.player2_rand = Math.floor(this.player2_rand);
+            this.player2_rand = Math.floor(Math.random() * (6 - 1 + 1)) + 1;
             tween(this.player2_dice).delay(0.8).call(() => {
-              this.player2_dice.getComponent(Sprite).spriteFrame = this.dice[this.player2_rand];
+              this.player2_dice.getComponent(Sprite).spriteFrame = this.dice[this.player2_rand - 1];
             }).start();
             this.player1_active = true;
-            this.move(abc, this.player2_rand);
+
+            if (this.entrycontrol2(this.player2_rand)) {
+              this.move(abc, this.player2_rand);
+            }
           }
         }
 
@@ -177,11 +222,26 @@ System.register(["cc"], function (_export, _context) {
           this.animation2 = this.player2_dice.getComponent(Animation);
         }
 
-        move(abc, rand) {
-          rand = rand + 1;
+        wincheck() {
+          let knight = this.knight;
+          let robot = this.robot;
 
+          if (this.player1_current_pos[0] == 1 && this.player1_current_pos[1] == 1) {
+            knight.node.getComponent(Label).string = 'Knight Won!';
+            knight.node.getComponent(Label).color = new Color(255, 255, 0);
+            this.player1_active = true;
+          }
+
+          if (this.player2_current_pos[0] == 1 && this.player2_current_pos[1] == 1) {
+            robot.node.getComponent(Label).string = 'Robot Won!';
+            robot.node.getComponent(Label).color = new Color(255, 255, 0);
+            this.player1_active = false;
+          }
+        }
+
+        move(abc, rand) {
           if (abc == "knight") {
-            for (var i = 1; i <= rand; i++) {
+            for (let i = 1; i <= rand; i++) {
               if (this.player1_current_pos[1] % 2 == 0) {
                 if (this.player1_current_pos[0] == 10) {
                   this.player1_current_pos[1]--;
@@ -189,10 +249,16 @@ System.register(["cc"], function (_export, _context) {
                   this.player1_current_pos[0]++;
                 }
               } else {
-                if (this.player1_current_pos[0] == 1) {
+                if (this.player1_current_pos[0] == 1 && this.player1_current_pos[1] > 1) {
                   this.player1_current_pos[1]--;
                 } else {
-                  this.player1_current_pos[0]--;
+                  console.log("we are here");
+
+                  if (this.player1_cur_x - rand <= 0 && this.player1_current_pos[1] == 1) {
+                    break;
+                  } else {
+                    this.player1_current_pos[0]--;
+                  }
                 }
               }
 
@@ -208,8 +274,10 @@ System.register(["cc"], function (_export, _context) {
             if (this.ladder_and_snake_check()) {
               this.laddermove1(rand / 2);
             }
+
+            this.player1_cur_x = this.player1_current_pos[0];
           } else {
-            for (var i = 1; i <= rand; i++) {
+            for (let i = 1; i <= rand; i++) {
               if (this.player2_current_pos[1] % 2 == 0) {
                 if (this.player2_current_pos[0] == 10) {
                   this.player2_current_pos[1]--;
@@ -217,10 +285,23 @@ System.register(["cc"], function (_export, _context) {
                   this.player2_current_pos[0]++;
                 }
               } else {
-                if (this.player2_current_pos[0] == 1) {
+                if (this.player2_current_pos[0] == 1 && this.player2_current_pos[1] > 1) {
                   this.player2_current_pos[1]--;
                 } else {
-                  this.player2_current_pos[0]--;
+                  console.log("--------------------------------");
+                  console.log("Okay we are here");
+                  console.log('current row ' + this.player2_current_pos[1]);
+                  console.log('current pos ' + this.player2_cur_x);
+                  console.log('random' + rand);
+                  console.log('random - current' + (this.player2_current_pos[0] - rand));
+
+                  if (this.player2_current_pos[1] == 1 && this.player2_cur_x - rand <= 0) {
+                    break;
+                  } else {
+                    this.player2_current_pos[0]--;
+                  }
+
+                  console.log("--------------------------------");
                 }
               }
 
@@ -230,13 +311,17 @@ System.register(["cc"], function (_export, _context) {
             if (this.player1_current_pos[0] == this.player2_current_pos[0] && this.player1_current_pos[1] == this.player2_current_pos[1]) {
               this.player1_current_pos[0] = 1;
               this.player1_current_pos[1] = 10;
-              this.animatemove(i);
+              this.animatemove(1);
             }
 
             if (this.ladder_and_snake_check()) {
               this.laddermove2(rand / 2);
             }
+
+            this.player2_cur_x = this.player2_current_pos[0];
           }
+
+          this.wincheck();
         }
 
         laddermove1(i) {
@@ -254,20 +339,21 @@ System.register(["cc"], function (_export, _context) {
         }
 
         ladder_and_snake_check() {
-          for (var i = 0; i <= 4; i++) {
-            if (this.player1_current_pos[0] == this.snake_index[i][0] && this.player1_current_pos[1] == this.snake_index[i][1]) {
-              this.player1_current_pos[0] = this.snake_index[i][2];
-              this.player1_current_pos[1] = this.snake_index[i][3];
-              return true;
-            }
-
-            if (this.player2_current_pos[0] == this.snake_index[i][0] && this.player2_current_pos[1] == this.snake_index[i][1]) {
-              this.player2_current_pos[0] = this.snake_index[i][2];
-              this.player2_current_pos[1] = this.snake_index[i][3];
-              return true;
-            }
-          }
-
+          // for(var i=0;i<=4;i++)
+          // {
+          //   if(this.player1_current_pos[0]==this.snake_index[i][0] && this.player1_current_pos[1]==this.snake_index[i][1])
+          //   {
+          //     this.player1_current_pos[0]=this.snake_index[i][2];
+          //     this.player1_current_pos[1]=this.snake_index[i][3];
+          //     return true;
+          //   }
+          //   if(this.player2_current_pos[0]==this.snake_index[i][0] && this.player2_current_pos[1]==this.snake_index[i][1])
+          //   {
+          //     this.player2_current_pos[0]=this.snake_index[i][2];
+          //     this.player2_current_pos[1]=this.snake_index[i][3];
+          //     return true;
+          //   }
+          // }
           for (var i = 0; i < 3; i++) {
             if (this.player1_current_pos[0] == this.ladder_index[i][2] && this.player1_current_pos[1] == this.ladder_index[i][3]) {
               this.player1_current_pos[0] = this.ladder_index[i][0];
@@ -311,48 +397,12 @@ System.register(["cc"], function (_export, _context) {
           }).start();
         }
 
-        randomsnake(max, min, row, tail_pos) {
-          let Head_ran = Math.floor(Math.random() * (max - min + 1)) + min;
-          let Tail_ran = Math.floor(Math.random() * (max - min + 1)) + min;
-
-          if (row == 1) {
-            this.tile4 = this.layer.getTiledTileAt(Head_ran, row, true);
-            this.tile5 = this.layer.getTiledTileAt(Tail_ran, 10, true);
-          } else {
-            this.tile4 = this.layer.getTiledTileAt(Head_ran, row, true);
-            this.tile5 = this.layer.getTiledTileAt(Tail_ran, tail_pos, true);
-          }
-
-          this.snake_index.push([Head_ran, row, Tail_ran, tail_pos]);
-          let diff1 = this.tile4.node.position.y - this.tile5.node.position.y;
-          let diff2 = this.tile4.node.position.x - this.tile5.node.position.x;
-          this.snake_array[this.snake_count] = instantiate(this.snake);
-          this.abc.node.addChild(this.snake_array[this.snake_count]);
-          this.snake_array[this.snake_count].setContentSize(420, diff1);
-          this.snake_array[this.snake_count].setPosition(this.tile4.node.position.x + 220, this.tile4.node.position.y + 220, 1);
-          let ang = Math.atan2(diff1, diff2);
-          tween(this.snake_array[this.snake_count]).to(0.5, {
-            angle: toDegree(ang) - 90
-          }).start();
-          this.snake_count++;
-        }
-
-        print_position() {
-          console.log("ladder positions !! ");
-
-          for (let i = 0; i < 4; i++) {
-            console.log("start pos" + this.snake_index[i][0] + this.snake_index[i][1]);
-            console.log("End pos" + this.snake_index[i][2] + this.snake_index[i][3]);
-          }
-        }
-
         ladderrandom(max, min, start_pos, end_pos) {
           let Head_ran = Math.floor(Math.random() * (max - min + 1)) + min;
           let Tail_ran = Math.floor(Math.random() * (max - min + 1)) + min;
           this.tile6 = this.layer.getTiledTileAt(Head_ran, start_pos, true);
           this.tile7 = this.layer.getTiledTileAt(Tail_ran, end_pos, true);
           this.ladder_index.push([Head_ran, start_pos, Tail_ran, end_pos]);
-          console.log(this.ladder_index);
           let diff1 = this.tile6.node.position.y - this.tile7.node.position.y;
           let diff2 = this.tile6.node.position.x - this.tile7.node.position.x;
           this.ladder_array[this.ladder_count] = instantiate(this.ladder);
@@ -367,22 +417,22 @@ System.register(["cc"], function (_export, _context) {
         }
 
         snakeAndladder() {
-          var j = 10;
-
-          for (var i = 1; i <= 5; i++) {
-            if (i % 2 != 0) {
-              this.randomsnake(5, 2, i, j);
-            } else {
-              this.randomsnake(10, 5, i, j);
-            }
-
-            j = j - 1;
-          }
-
+          //   var j=10;
+          // for(var i=1;i<=5;i++)
+          // {
+          //   if(i%2!=0)
+          //   {
+          //   this.randomsnake(5,2,i,j);
+          //   }
+          //   else
+          //   {
+          //     this.randomsnake(10,5,i,j);
+          //   }
+          //   j=j-1;
+          // }
           this.ladderrandom(2, 5, 7, 10);
           this.ladderrandom(6, 10, 1, 9);
           this.ladderrandom(1, 4, 4, 6);
-          this.print_position();
         }
 
         start() {
@@ -408,8 +458,8 @@ System.register(["cc"], function (_export, _context) {
             }
           }
 
-          this.tile1 = this.layer.getTiledTileAt(1, 10, true);
-          this.tile2 = this.layer.getTiledTileAt(1, 10, true);
+          this.tile1 = this.layer.getTiledTileAt(0, 10, true);
+          this.tile2 = this.layer.getTiledTileAt(0, 9, true);
           this.character1.node.setPosition(this.tile1.node.position.x, this.tile1.node.position.y, 1);
           this.character2.node.setPosition(this.tile2.node.position.x, this.tile2.node.position.y, 1);
           this.character1.node.setSiblingIndex(2000);
@@ -417,12 +467,7 @@ System.register(["cc"], function (_export, _context) {
           this.snakeAndladder(); // [3]
         }
 
-        update(deltaTime) {
-          if (this.player1_current_pos[0] < 1 && this.player1_current_pos[1] < 1 || this.player2_current_pos[0] < 1 && this.player2_current_pos[1] < 1) {
-            director.pause();
-          } // [4]
-
-        }
+        update(deltaTime) {}
 
       }, _temp), (_descriptor = _applyDecoratedDescriptor(_class2.prototype, "abc", [_dec2], {
         configurable: true,

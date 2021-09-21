@@ -1749,10 +1749,19 @@
       "__uuid__": "567c72c7-53cf-42f9-8647-c74d916f76b0",
       "__expectedType__": "cc.Prefab"
     },
-    "ladder": null,
+    "ladder": {
+      "__uuid__": "59ada2da-3c93-45ff-8275-dbc9151f529b",
+      "__expectedType__": "cc.Prefab"
+    },
     "dice_pre": {
       "__uuid__": "f9cbe9ba-ae1a-447d-8a4f-3c2304dc8945",
       "__expectedType__": "cc.Prefab"
+    },
+    "player1_butt": {
+      "__id__": 37
+    },
+    "player2_butt": {
+      "__id__": 55
     },
     "_id": "c1+btljSlELYgutYW6x0eZ"
   },
